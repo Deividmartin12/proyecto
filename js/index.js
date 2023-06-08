@@ -12,6 +12,8 @@ function b(){
 
 b();
 function PRUEBAS() {
-abc=123;
+ abc=123;
+ bca = 321;
+ alert(bca);
 alert(abc);
 }
