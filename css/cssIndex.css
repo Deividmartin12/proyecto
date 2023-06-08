@@ -1,0 +1,211 @@
+body {
+    margin: 0%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0%;
+    padding-block-end: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-weight: bold;
+    background-color: antiquewhite;
+    transition: all 0.5s ease;
+    position: fixed;
+    width: 94%;
+    margin: 0%;
+    height: 25%;
+    top: 0;
+}
+
+ul {
+    width: 100%;
+    text-align: center;
+}
+
+ul>li {
+    font-family: inherit;
+    font-size: 20px;
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+ul li a {
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+    color: black;
+    text-decoration: none;
+}
+
+nav div {
+    text-align: center;
+}
+
+nav>div h1  {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+
+    padding-left: 5%;
+    padding-top: 5%;
+    margin: 0;
+}
+
+.imagenNav {
+    border: 0;
+    width: 90px;
+    padding-top: 3%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+}
+
+main img {
+    /*width: 1465px;*/
+    width: 100%;
+    height: auto;
+}
+
+.imagenseguir {
+    width: 60px;
+    padding-right: 5%;
+    height: auto;
+    text-align: center;
+}
+
+.imagenseguir1 {
+    width: 120px;
+    padding-top: 0;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.derecha {
+    padding-left: 0;
+    text-align: center;
+    width: 25%;
+
+    float: left;
+    background-color: antiquewhite;
+    height: 230px;
+}
+
+#trabaja {
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: 'Tahoma', sans-serif;
+
+}
+
+footer div>p {
+    width: 100%;
+    font-size: 23px;
+    font-family: 'Verdana', sans-serif;
+
+}
+
+.logueo {
+    text-align: initial;
+}
+
+.carrito {
+    width: 50px;
+    padding-top: 0%;
+    padding-right: 0%;
+    padding-left: 0%;
+}
+
+.preciocarrito {
+    font-size: 25px;
+    margin: 0;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-family: 'Verdana';
+}
+
+.carrito,
+.preciocarrito {
+    float: right;
+}
+
+.reseña {
+    background-color: antiquewhite;
+    width: 100%;
+    margin: 0%;
+    padding-left: 1%;
+}
+
+.reseña h1 {
+    color: black;
+
+    text-align: center;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.reseña form {
+    width: 40%;
+    margin: 0%;
+    align-items: center;
+}
+
+.reseña h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin: 0%;
+    text-align: left;
+}
+
+.reseña input {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 20%;
+    border: transparent;
+    background-color: cornsilk;
+    height: 40px;
+
+    margin-top: 2%;
+    margin-block-end: 2%;
+}
+
+ul li a:hover {
+    padding: 5px;
+    background-color: black;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.active {
+    background-color: black;
+    margin: 0%;
+    border-right: 1px;
+    color: white;
+    height: 17%;
+    }
+    .active ul li a:hover {
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    margin: 0%;
+    }
+    .active ul li a {
+    color: #fff;
+    margin: 0px;
+    }
+    .active .imagenNav {
+    transition: all 0.5s ease;
+    width: 40px;
+    padding-top: 12%;
+    padding-block-end: 0%;
+    margin: 0;
+    }
+    .active h1{
+    margin: 0px;
+    }
