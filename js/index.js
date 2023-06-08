@@ -11,3 +11,7 @@ function b(){
 }
 
 b();
+function PRUEBAS() {
+abc=123;
+alert(abc);
+}
