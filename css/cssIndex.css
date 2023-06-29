@@ -11,10 +11,10 @@ nav {
     padding-left: 3%;
     padding-right: 3%;
     font-weight: bold;
-    background-color: antiquewhite;
+    background-color: #faebd7;
     transition: all 0.5s ease;
     position: fixed;
-    width: 94%;
+    width: 100%;
     margin: 0%;
     height: 25%;
     top: 0;

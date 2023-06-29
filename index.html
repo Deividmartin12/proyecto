@@ -7,76 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MUCHICK</title>
     <link rel="stylesheet" href="css/cssIndex.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav>
-        <div>
 
-            <h1>MUCHICK</h1>
-
-
-            <a href="index.html">
-                <img class="imagenNav" src="img/logoPrueva.jpg" alt="" />
-            </a>
-
+    <nav class="navbar bg-body-primary">
+        <div class="container-fluid">
+            <img src="img/logoPrueva.jpg" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
         </div>
-        <br />
-        <div>
-            <ul>
-                <li><a href="#">¿Quienes somos?</a></li>
-                &nbsp;&nbsp;/&nbsp;&nbsp;
-                <li><a href="#">Reservar Mesa</a></li>
-                &nbsp;&nbsp;/&nbsp;&nbsp;
-                <li><a href="#">Delivery</a></li>
-                &nbsp;&nbsp;/&nbsp;&nbsp;
-                <li><a href="#">Carta</a></li>
-                <br />
-            </ul>
-            <br />
-        </div>
-        <br />
-        <div>
-            <img class="imagenNav" id="subir" src="img/login1.png" alt="" srcset="" />
-            <ul class="logueo">
-                <li>
-                    <a href="">Login</a>
-                </li>
-                &nbsp;&nbsp;&nbsp; /&nbsp; &nbsp; &nbsp;
-                <li>
-                    <a href="">Registrarse</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <img src="img/carrito.png" alt="" class="carrito" />
-            <p class="preciocarrito">S/ 0.00</p>
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <hr />
+    <!-- -->
+
     <main>
         <img src="img/hamburguesa.jpg" alt="" srcset="" />
     </main>
-    <hr />
-    <div class="reseña">
-        <h1>Reseñas</h1>
-        <br />
-        <form action="data.php" , method="post">
-            <fieldset>
-                <legend>
-                    <h2>Envianos tu reseña</h2>
-                </legend>
-                <textarea name="" id="" cols="100" rows="5"></textarea> <br />
-                <input type="button" value="Enviar" /> &nbsp;&nbsp;
-                <input type="reset" value="Escribir denuevo" />
-            </fieldset>
-        </form>
-        <br />
-        <h2>Comentarios de los demas:</h2>
-        <br />
-        <table></table>
-    </div>
-    <hr />
     <footer>
         <div class="derecha">
             <p>Siguenos</p>
@@ -108,7 +75,6 @@
             <p>Muchick</p>
 
             <img class="imagenNav" src="img/logoPrueva.jpg" alt="" /><br /><br />
-
             <a id="trabaja" href="">Trabaja con nosotros</a>
             <br />
             <br />
