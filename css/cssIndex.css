@@ -85,13 +85,14 @@ main img {
 }
 
 .derecha {
+    padding-top: 1%;
     padding-left: 0;
     text-align: center;
     width: 33%;
 
     float: left;
-    background-color: antiquewhite;
-    height: 230px;
+    color: white;
+    height: 300px;
 }
 
 #trabaja {
@@ -103,6 +104,11 @@ main img {
 
 }
 
+footer{
+    background-color: black;
+    color: white;
+}
+
 footer div>p {
     width: 100%;
     font-size: 23px;
@@ -110,10 +116,25 @@ footer div>p {
 
 }
 
+.imagen {
+    float: left;
+    
+}
+.imagen img{
+    width: 30%;
+    margin: 0%;
+}
+
+.imagen12{
+ width: 5%;
+}
+
 .logueo {
     text-align: initial;
 }
-
+.abajo{
+    float: inherit;
+}
 .carrito {
     width: 50px;
     padding-top: 0%;
