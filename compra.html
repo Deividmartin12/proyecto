@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,39 @@
     <link rel="stylesheet" href="css/cssIndex.css">
     <title>Compra</title>
 </head>
+
 <body>
-    <nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div>
             <h1>MUCHICK</h1>
-            <a href="index.html">
+            <a class="navbar-brand" href="index.html">
                 <img class="imagenNav" src="img/logoPrueva.jpg" alt="" />
             </a>
         </div>
-        <div>
-            <ul>
-                <li><a href="#">¿Quienes somos?</a></li>
-                &nbsp;&nbsp;/&nbsp;&nbsp;
-                <li><a href="#">Reservar Mesa</a></li>
-                &nbsp;&nbsp;/&nbsp;&nbsp;
-                <li><a href="#">Delivery</a></li>
-                &nbsp;&nbsp;/&nbsp;&nbsp;
-                <li><a href="#">Carta</a></li>
-                <br />
-            </ul>
-            <br />
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <br />
+
         <div>
             <img class="imagenNav" id="subir" src="img/login1.png" alt="" srcset="" />
             <ul class="logueo">
@@ -99,15 +111,12 @@
         </div>
         <div class="derecha">
             <p>Muchick</p>
-
             <img class="imagenNav" src="img/logoPrueva.jpg" alt="" /><br /><br />
-
             <a id="trabaja" href="">Trabaja con nosotros</a>
             <br />
             <br />
         </div>
     </footer>
-
     <script src="js/index.js"></script>
 </body>
 
