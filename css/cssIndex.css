@@ -2,23 +2,7 @@ body {
     margin: 0%;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0%;
-    padding-block-end: 0;
-    padding-left: 3%;
-    padding-right: 3%;
-    font-weight: bold;
-    background-color: #faebd7;
-    transition: all 0.5s ease;
-    position: fixed;
-    width: 100%;
-    margin: 0%;
-    height: 25%;
-    top: 0;
-}
+
 
 ul {
     width: 100%;
@@ -44,7 +28,7 @@ nav div {
     text-align: center;
 }
 
-nav>div h1  {
+nav>div h1 {
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
 
@@ -101,7 +85,6 @@ main img {
     text-decoration: none;
     font-size: 19px;
     font-family: 'Tahoma', sans-serif;
-
 }
 
 footer{
@@ -208,25 +191,29 @@ ul li a:hover {
     border-right: 1px;
     color: white;
     height: 17%;
-    }
-    .active ul li a:hover {
+}
+
+.active ul li a:hover {
     padding: 5px;
     background-color: white;
     color: black;
     border-radius: 15px;
     margin: 0%;
-    }
-    .active ul li a {
+}
+
+.active ul li a {
     color: #fff;
     margin: 0px;
-    }
-    .active .imagenNav {
+}
+
+.active .imagenNav {
     transition: all 0.5s ease;
     width: 40px;
     padding-top: 12%;
     padding-block-end: 0%;
     margin: 0;
-    }
-    .active h1{
+}
+
+.active h1 {
     margin: 0px;
-    }
+}
