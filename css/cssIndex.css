@@ -1,5 +1,11 @@
+#header {
+    background-color: #f9cece;
+}
 
-
+.navbar-icon{
+    margin-left: 30px;
+    margin-right: 30px;
+}
 body {
     margin: 0%;
 }
