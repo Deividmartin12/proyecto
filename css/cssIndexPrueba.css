@@ -1,0 +1,418 @@
+#header {
+    background-color: #f9cece;
+}
+
+.navbar-icon{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+body {
+    margin: 0%;
+}
+
+/*PRUEBA CABALLERO*/
+/*TIPO DE LETRA*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+#header{
+  background-image: url(/proyecto/img/fondo_header.png);
+  height: 85px;
+  background-size: 1550px;
+  /* font-weight: bold; */
+}
+
+.navbar-nav{
+  margin: auto;
+}
+
+.nav-item{
+  padding-inline: 15px;
+}
+
+
+
+/*PRUEBA CABALLERO*/
+
+
+
+/*
+>>>>>>>>> Temporary merge branch 2
+ul {
+    width: 100%;
+    text-align: center;
+}
+
+ul>li {
+    font-family: inherit;
+    font-size: 20px;
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+ul li a {
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+    color: black;
+    text-decoration: none;
+}
+*/
+nav div {
+    text-align: center;
+}
+
+nav>div h1 {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+
+    padding-left: 5%;
+    padding-top: 5%;
+    margin: 0;
+}
+
+.imagenNav {
+    border: 0;
+    width: 90px;
+    padding-top: 3%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+}
+
+/* main img {
+    width: 1465px;
+    width: 100%;
+    height: auto;
+} */
+
+.imagenseguir {
+    width: 60px;
+    padding-right: 5%;
+    height: auto;
+    text-align: center;
+}
+
+.imagenseguir1 {
+    width: 120px;
+    padding-top: 0;
+    padding-right: 5%;
+    text-align: center;
+}
+/*
+.derecha {
+    padding: 25px;
+    text-align: justify;
+    width: 33%;
+    background-color: black;
+    float: left;
+    color: white;
+    height: 400px;
+    font-size: 10px;
+}
+*/
+#trabaja {
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    font-size: 1px;
+    font-family: 'Tahoma', sans-serif;
+}
+/*
+footer{
+   background-color: black;
+    color: white;
+}
+
+footer div>p {
+    width: 100%;
+    font-size: 13px;
+    font-family: 'Verdana', sans-serif;
+
+}
+*/
+.imagen {
+    float: left;
+    
+}
+.imagen img{
+    width: 30%;
+    margin: 0%;
+}
+
+.imagen12{
+ width: 5%;
+}
+
+.logueo {
+    text-align: initial;
+}
+
+.carrito {
+    width: 50px;
+    padding-top: 0%;
+    padding-right: 0%;
+    padding-left: 0%;
+}
+
+.preciocarrito {
+    font-size: 25px;
+    margin: 0;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-family: 'Verdana';
+}
+
+.carrito,
+.preciocarrito {
+    float: right;
+}
+
+.reseña {
+    background-color: antiquewhite;
+    width: 100%;
+    margin: 0%;
+    padding-left: 1%;
+}
+
+.reseña h1 {
+    color: black;
+
+    text-align: center;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.reseña form {
+    width: 40%;
+    margin: 0%;
+    align-items: center;
+}
+
+.reseña h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin: 0%;
+    text-align: left;
+}
+
+.reseña input {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 20%;
+    border: transparent;
+    background-color: cornsilk;
+    height: 40px;
+
+    margin-top: 2%;
+    margin-block-end: 2%;
+}
+
+ul li a:hover {
+    padding: 5px;
+    background-color: black;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.active {
+    background-color: black;
+    margin: 0%;
+    border-right: 1px;
+    color: white;
+    height: 17%;
+}
+
+.active ul li a:hover {
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    margin: 0%;
+}
+
+.active ul li a {
+    color: #fff;
+    margin: 0px;
+}
+
+.active .imagenNav {
+    transition: all 0.5s ease;
+    width: 40px;
+    padding-top: 12%;
+    padding-block-end: 0%;
+    margin: 0;
+}
+
+.active h1 {
+    margin: 0px;
+}
+
+/* asdasdasdahasgdgasgjdkasdgjasgjdajsgdasdagsdjvafagasd*/
+
+footer{
+    background-color: black;
+    color: white;
+    padding-top: 1.5%;
+    margin-right: 0%;
+    padding-right: 0%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-info, .policies, .subscribe {
+    flex: 1;
+    margin: 5%;
+    margin-top: 0%;
+    margin-block-end: 0%;
+  }
+  
+  .footer-container h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-container p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-container ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-container ul li a {
+    color: white; /* Color de enlace personalizado */
+    text-decoration: none;
+  }
+  
+  .footer-container ul li a:hover {
+    text-decoration: underline;
+  }
+  /*
+  .subscribe label {
+    display: block;
+    margin-bottom: 5px;
+  }*/
+  /*
+  .subscribe input[type="text"],
+  .subscribe input[type="email"]{
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .subscribe input[type="checkbox"] {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }*/
+  .subscribe button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+  }
+  
+  
+  .subscribe button:hover {
+    background-color: #555;
+  }
+
+  #acepto{
+    float: left;
+  }
+/*   */
+
+.reclamaciones {
+    text-align: center;
+  }
+  
+  .reclamaciones h3 {
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  
+  .reclamaciones img {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  /*    */
+  .abajo img, .footer_abajo{
+    float: left;
+    margin: 15px;
+    
+  }
+
+  #imagen-siguenos{
+    float: right;
+  }
+
+  #izquierda{
+    float: left;
+    margin-top: 4%;
+    padding: 0%;
+  }
+
+  .abajo {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    background-color: black;
+  }
+  
+  .suscribe input{
+    width: 15% ;
+    
+  }
+
+  @media (max-width: 767px) {
+    .footer-container {
+        flex-direction: column;
+        
+        padding: 0%;
+    }
+}
+
+/*      */
+hr {
+    background-color: white;
+    color: white;
+    margin: 0;
+  }
+  
+  .linea-roja{
+    margin: 0%;
+    color: rgb(255,0,0);
+    background-color: rgb(255,0,0);
+    height: 15px;
+
+  }
