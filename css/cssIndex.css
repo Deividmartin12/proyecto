@@ -2,10 +2,11 @@
     background-color: #f9cece;
 }
 
-.navbar-icon{
+.navbar-icon {
     margin-left: 30px;
     margin-right: 30px;
 }
+
 body {
     margin: 0%;
 }
@@ -76,6 +77,7 @@ main img {
     padding-right: 5%;
     text-align: center;
 }
+
 /*
 .derecha {
     padding: 25px;
@@ -95,6 +97,7 @@ main img {
     font-size: 1px;
     font-family: 'Tahoma', sans-serif;
 }
+
 /*
 footer{
    background-color: black;
@@ -110,15 +113,16 @@ footer div>p {
 */
 .imagen {
     float: left;
-    
+
 }
-.imagen img{
+
+.imagen img {
     width: 30%;
     margin: 0%;
 }
 
-.imagen12{
- width: 5%;
+.imagen12 {
+    width: 5%;
 }
 
 .logueo {
@@ -186,10 +190,10 @@ footer div>p {
 }
 
 ul li a:hover {
-    padding: 5px;
-    background-color: black;
-    color: #fff;
     border-radius: 15px;
+    padding: 5px;
+    background-color: rgb(209, 56, 56);
+    color: #895b5b;
 }
 
 .active {
@@ -202,7 +206,7 @@ ul li a:hover {
 
 .active ul li a:hover {
     padding: 5px;
-    background-color: white;
+    background-color: rgb(27, 157, 120);
     color: black;
     border-radius: 15px;
     margin: 0%;
@@ -227,7 +231,7 @@ ul li a:hover {
 
 /* asdasdasdahasgdgasgjdkasdgjasgjdajsgdasdagsdjvafagasd*/
 
-footer{
+footer {
     background-color: black;
     color: white;
     padding-top: 1.5%;
@@ -238,50 +242,54 @@ footer{
 .footer-container {
     display: flex;
     justify-content: space-between;
-  }
-  
-  .contact-info, .policies, .subscribe {
+}
+
+.contact-info,
+.policies,
+.subscribe {
     flex: 1;
     margin: 5%;
     margin-top: 0%;
     margin-block-end: 0%;
-  }
-  
-  .footer-container h3 {
+}
+
+.footer-container h3 {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  .footer-container p {
+}
+
+.footer-container p {
     font-size: 14px;
     margin-bottom: 5px;
-  }
-  
-  .footer-container ul {
+}
+
+.footer-container ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .footer-container ul li {
+}
+
+.footer-container ul li {
     margin-bottom: 5px;
-  }
-  
-  .footer-container ul li a {
-    color: white; /* Color de enlace personalizado */
+}
+
+.footer-container ul li a {
+    color: white;
+    /* Color de enlace personalizado */
     text-decoration: none;
-  }
-  
-  .footer-container ul li a:hover {
+}
+
+.footer-container ul li a:hover {
     text-decoration: underline;
-  }
-  /*
+}
+
+/*
   .subscribe label {
     display: block;
     margin-bottom: 5px;
   }*/
-  /*
+/*
   .subscribe input[type="text"],
   .subscribe input[type="email"]{
     width: 50%;
@@ -295,7 +303,7 @@ footer{
     border: 1px solid #ccc;
     border-radius: 3px;
   }*/
-  .subscribe button {
+.subscribe button {
     padding: 8px 16px;
     background-color: #333;
     color: #fff;
@@ -303,77 +311,79 @@ footer{
     border-radius: 3px;
     cursor: pointer;
     text-align: center;
-  }
-  
-  input[type="text"] {
-    width: 100%;
-  }
-  
-  
-  .subscribe button:hover {
-    background-color: #555;
-  }
+}
 
-  #acepto{
+input[type="text"] {
+    width: 100%;
+}
+
+
+.subscribe button:hover {
+    background-color: #555;
+}
+
+#acepto {
     float: left;
-  }
+}
+
 /*   */
 
 .reclamaciones {
     text-align: center;
-  }
-  
-  .reclamaciones h3 {
+}
+
+.reclamaciones h3 {
     margin-bottom: 10px;
     text-align: justify;
-  }
-  
-  .reclamaciones img {
+}
+
+.reclamaciones img {
     display: block;
     margin: 0 auto;
     width: 50px;
-    
-  }
 
-  .container {
+}
+
+.container {
     display: flex;
     align-items: center;
-    
-  }
-  
-  /*    */
-  .abajo img, .footer_abajo{
+
+}
+
+/*    */
+.abajo img,
+.footer_abajo {
     float: left;
     margin: 15px;
-    
-  }
 
-  #imagen-siguenos{
+}
+
+#imagen-siguenos {
     float: right;
-  }
+}
 
-  #izquierda{
+#izquierda {
     float: left;
     margin-top: 4%;
     padding: 0%;
-  }
+}
 
-  .abajo {
+.abajo {
     display: flex;
     align-items: center;
     padding: 20px 0;
     background-color: black;
-  }
-  
-  .suscribe input{
-    width: 15% ;
-    
-  }
+}
 
-  @media (max-width: 767px) {
+.suscribe input {
+    width: 15%;
+
+}
+
+@media (max-width: 767px) {
     .footer-container {
         flex-direction: column;
-        
+
         padding: 0%;
     }
 }
@@ -383,12 +393,12 @@ hr {
     background-color: white;
     color: white;
     margin: 0;
-  }
-  
-  .linea-roja{
+}
+
+.linea-roja {
     margin: 0%;
-    color: rgb(255,0,0);
-    background-color: rgb(255,0,0);
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
     height: 15px;
 
-  }
+}
