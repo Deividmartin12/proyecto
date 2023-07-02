@@ -10,16 +10,116 @@ body {
     margin: 0%;
 }
 
-/*PRUEBA CABALLERO*/
-/*TIPO DE LETRA*/
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
-
-#header{
-  background-image: url(/proyecto/img/fondo_header.png);
-  height: 85px;
-  background-size: 1550px;
-  /* font-weight: bold; */
+body {
+  margin: 0;
+  padding: 0;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../img/fondo_header.png);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 13%;
+  z-index: 999;
+}
+
+.nav-izquierda2 li {
+  display: inline-block;
+  list-style: none;
+}
+
+.nav-izquierda2 li a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 35px;
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-izquierda1 {
+  width: 23%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-izquierda2 {
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-izquierda3 {
+  width: 24%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-izquierda1 img {
+  width: 100%;
+  max-width: 250px;
+  padding: 4%;
+}
+
+.nav-izquierda3 img {
+  width: 55px;
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+  .nav-izquierda1 {
+    width: 40%;
+  }
+
+  .nav-izquierda2 {
+    width: 60%;
+  }
+
+  .nav-izquierda3 {
+    display: none;
+  }
+
+  .nav-izquierda2 li a {
+    padding-right: 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-izquierda1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-izquierda2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-izquierda2 li a {
+    padding-right: 10px;
+    font-size: 13px;
+  }
+}
+
+
+
+
+
 
 .navbar-nav{
   margin: auto;
@@ -28,8 +128,26 @@ body {
 .nav-item{
   padding-inline: 15px;
 }
+ 
 
 
+
+/*  carrusel ccs anggelo */
+
+
+/*  carrusel ccs anggelo */
+
+
+/*PRUEBA CABALLERO*/
+/*TIPO DE LETRA*/
+/*@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+/*
+#header{
+  background-image: url(/proyecto/img/fondo_header.png);
+  height: 85px;
+  background-size: 1550px;
+   font-weight: bold; 
+}*/
 
 /*PRUEBA CABALLERO*/
 
@@ -57,10 +175,9 @@ ul li a {
     text-decoration: none;
 }
 */
-nav div {
-    text-align: center;
-}
 
+
+/*
 nav>div h1 {
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
@@ -68,13 +185,14 @@ nav>div h1 {
     padding-left: 5%;
     padding-top: 5%;
     margin: 0;
-}
+}*/
 
 .imagenNav {
     border: 0;
     width: 90px;
     padding-top: 3%;
     height: auto;
+    
 }
 
 main {
@@ -416,3 +534,4 @@ hr {
     height: 15px;
 
   }
+
