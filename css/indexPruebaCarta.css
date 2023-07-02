@@ -58,6 +58,10 @@ nav{
 /*NAV*/
 
 /*MAIN*/
+main{
+  background-color: rgb(255, 250, 217);
+}
+
 #carouselExampleCaptions{
   margin-inline: 350px;
 }
