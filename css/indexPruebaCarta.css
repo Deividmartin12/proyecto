@@ -43,8 +43,6 @@ nav{
 .links_cabecera a:hover{
     background-color: rgb(254, 14, 14);
     color: white;
-    font-size: 22px;
-    padding: 27px;
 }
 
 .iconos_cabecera a{
@@ -53,14 +51,24 @@ nav{
 
 .iconos_cabecera img{
     padding: 0;
-    height: 45px;
+    height: 80px;
     padding: 15px;
 }
 
 /*NAV*/
 
 /*MAIN*/
+#carouselExampleCaptions{
+  margin-inline: 350px;
+}
 
+.carousel-inner div img{
+  height: 500px;
+}
+
+.carousel-item div{
+  box-shadow: burlywood;
+}
 /*MAIN*/
 
 /*FOOTER*/
