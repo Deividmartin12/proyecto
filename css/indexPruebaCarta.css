@@ -14,12 +14,12 @@ nav{
     background-image: url(/proyecto/img/fondo_header.png);
     background-size: 1550px;
     position: fixed;
+    z-index: 999;
 
 }
 
 .espacio_nav{
     height: 80px;
-    height: 100px;
     background-color: rgb(255, 250, 217);
 }
 
@@ -60,9 +60,7 @@ nav{
 /*NAV*/
 
 /*MAIN*/
-main{
-    height: 900px;
-}
+
 /*MAIN*/
 
 /*FOOTER*/
