@@ -13,8 +13,9 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav>
+    <nav class="nav_principal">
         <div class="logo_cabecera">
             <a href="/HTML/index.html">
                 <img src="/proyecto/img/MLogoCabecera.png" alt="Logo Muchick" class="logo_cabecera">
@@ -29,7 +30,7 @@
             <a href="">UBICACIÓN</a>
         </div>
 
-       <div class="iconos_cabecera">
+        <div class="iconos_cabecera">
             <a href="">
                 <img src="img/iconoUsuario_2.png" alt="Icono Login">
             </a>
@@ -40,50 +41,27 @@
     </nav>
     <div class="espacio_nav"></div>
     <main>
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="nav-link" aria-current="page" href="#">ENTRADAS</a>
+                <a class="nav-link" href="#">SEGUNDOS</a>
+                <a class="nav-link" href="#">BEBIDAS</a>
+                <a class="nav-link">POSTRES</a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://th.bing.com/th/id/R.e7dcd3ff1de1ae84eb3aa2f80efc284d?rik=1tS2dKqIWuxl%2bw&pid=ImgRaw&r=0"
-                        class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Sabores tradicionales</h5>
-                        <p>Disfruta de los platos más representativos de la gastronomía peruana</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://wallpapercave.com/wp/wp3119269.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 style="color:black;">Ingredientes de calidad</h5>
-                        <p style="color:black">Nos esforzamos para brindarte la mejor experiencia gastronómica</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://wholesomekids.ca/wp-content/uploads/2020/04/iStock-945606006.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Variedad de sabores</h5>
-                        <p>Tenemos un menú con diversos platillos para todos los gustos</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        </nav>
+
+        <div class="nav justify-content-center nav-justified">
+            <a class="nav-link" aria-current="page" href="#">ENTRADAS</a>
+            <a class="nav-link" href="#">SEGUNDOS</a>
+            <a class="nav-link" href="#">BEBIDAS</a>
+            <a class="nav-link">POSTRES</a>
         </div>
+        
+
     </main>
     <div class="linea-roja"></div>
     <footer>
@@ -144,4 +122,5 @@
 
 </html>
 </body>
+
 </html>
