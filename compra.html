@@ -2,122 +2,125 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cssIndex.css">
-    <title>Compra</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUCHICK</title>
+    <link rel="stylesheet" href="css/cssIndexPrueba.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div>
-            <h1>MUCHICK</h1>
-            <a class="navbar-brand" href="index.html">
-                <img class="imagenNav" src="img/logoPrueva.jpg" alt="" />
-            </a>
+    <header>
+        <nav>
+            <div class="nav-izquierda1">
+                <a href="indexPrueba.html">
+                    <img src="img/MLogoCabecera.png" alt="">
+                </a>
+            </div>
+            <div class="nav-izquierda2">
+
+                <li><a href="">¿QUIÉNES SOMOS?</a></li>
+                <li><a href="">RESERVAR MESA</a></li>
+                <li><a href="">DELIVERY</a></li>
+                <li><a href="">CARTA</a></li>
+
+            </div>
+            <div class="nav-izquierda3">
+                <a href="">
+                    <img src="img/iconoUsuario_2.png" alt="">
+                </a>
+                <a href="compra.html">
+                    <img src="img/carrito.png" alt="">
+                </a>
+            </div>
+
+
+
+        </nav>
+    </header>
+
+
+    <main id="pagoPedido">
+        <h1 class="pago">Pago de pedido</h1>
+        <h2>DATOS</h2>
+        <div class="botonesDatos">
+            <button id="btnApple">Apple</button>
+            <button id="btnFacebook">Facebook</button>
+            <button id="btnGoogle">Google</button>
         </div>
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
+        <h2>DATOS</h2>
+        <div class="datosRegistros">
+            <h2>Nombre</h2>
+            <h2>Apellidos</h2>
+            <h2>Email</h2>
+            <h2>Celular</h2>
+            <h2>Dirección</h2>
+        </div>
+    </main>
+
+
+    <div class="linea-roja"></div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Contacto & Atención al cliente</h3>
+                <p>&nbsp; Contactos:</p>
+                <p>&nbsp;&nbsp; WhatsApp: +51 975 544 912</p>
+                <p>&nbsp;&nbsp; Teléfono: (01) 999 9999</p>
+                <div class="reclamaciones">
+                    <h3>Libro de reclamaciones</h3>
+                    <a href="pagina_reclamaciones.html"><img src="img/libro1.jpeg"></a>
+                </div>
+                <br>
+            </div>
+            <div class="policies">
+                <h3>Políticas & Términos</h3>
+                <ul>
+                    <li><a href="#">&nbsp; Términos y condiciones de la web</a></li>
+                    <li><a href="#">&nbsp; Políticas de privacidad</a></li>
+                    <li><a href="#">&nbsp; Políticas de delivery</a></li>
+                    <li><a href="#">&nbsp; Términos y promociones</a></li>
+                    <li><a href="#">&nbsp; Campañas</a></li>
                 </ul>
             </div>
+            <br>
+            <div class="subscribe">
+                <h3>Recibe nuestras ofertas y novedades</h3>
+                <p>Suscríbete y recibe todas nuestras ofertas exclusivas y novedades</p>
+                <form action="">
+                    <label for="">Ingresa tu número de documento</label> <br>
+                    <input type="text"><br><br>
+                    <label for="">Ingresa tu email</label><br>
+                    <input type="text"><br><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">He leído y acepto la política y términos</label>
+                    <br> <br>
+                    <button type="submit">Suscribirme</button>
+                </form>
+            </div>
         </div>
-
-        <div>
-            <img class="imagenNav" id="subir" src="img/login1.png" alt="" srcset="" />
-            <ul class="logueo">
-                <li>
-                    <a href="">Login</a>
-                </li>
-                &nbsp;&nbsp;&nbsp; /&nbsp; &nbsp; &nbsp;
-                <li>
-                    <a href="">Registrarse</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <img src="img/carrito.png" alt="" class="carrito" />
-            <p class="preciocarrito">S/ 0.00</p>
-        </div>
-    </nav>
-    <hr />
-    <main>
-        <img src="img/hamburguesa.jpg" alt="" srcset="" />
-    </main>
-    <hr />
-    <div class="reseña">
-        <h1>Reseñas</h1>
-        <br />
-        <form action="data.php" , method="post">
-            <fieldset>
-                <legend>
-                    <h2>Envianos tu reseña</h2>
-                </legend>
-                <textarea name="" id="" cols="100" rows="5"></textarea> <br />
-                <input type="button" value="Enviar" /> &nbsp;&nbsp;
-                <input type="reset" value="Escribir denuevo" />
-            </fieldset>
-        </form>
-        <br />
-        <h2>Comentarios de los demas:</h2>
-        <br />
-        <table></table>
-    </div>
-    <hr />
-    <footer>
-        <div class="derecha">
-            <p>Siguenos</p>
-            <a href="https://www.facebook.com/profile.php?id=100063631764765" target="_blank">
-                <img class="imagenseguir" src="img/facebook.png" alt="" />
-            </a>
-            <a href="https://www.instagram.com/explore/locations/429785557773500/muchick-eten/" target="_blank">
-                <img class="imagenseguir" src="img/instagram.png" alt="" />
-            </a>
-
-        </div>
-        <div class="derecha">
-            <p>Comunicate con nosotros</p>
-            <ul>
-                <li>
-                    <a href="wa.me//+51923505083" target="_blank"><b>+51 923 505 083</b></a>
-                </li>
-                <br />
-                <li>
-                    <a href="wa.me//+51953457234" target="_blank"><b>+51 953 457 234</b></a>
-                </li>
-            </ul>
-        </div>
-        <div class="derecha">
-            <p>Libro de reclamaciones</p>
-            <img src="img/libroReclamaciones.png" alt="" srcset="" class="imagenseguir1" />
-        </div>
-        <div class="derecha">
-            <p>Muchick</p>
-            <img class="imagenNav" src="img/logoPrueva.jpg" alt="" /><br /><br />
-            <a id="trabaja" href="">Trabaja con nosotros</a>
-            <br />
-            <br />
+        <br>
+        <hr style="background-color: white; color: white; margin: 0%;">
+        <div class="abajo" id="abajo" style="background-color: black;">
+            <img src="img/logoPrueva.jpg" width="100" alt="">
+            <div style="background-color: black;" class="footer_abajo">
+                <h1>MUCHICK</h1>
+                <h2>Síguenos:
+                    <img id="imagen-siguenos" src="img/facebook.png" width="35" alt="">
+                    <img id="imagen-siguenos" src="img/instagram.png" width="35" alt="">
+                </h2>
+                <p>Derechos de autor</p>
+                <p>&copy; Año Empresa. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
     <script src="js/index.js"></script>
-</body>
 
 </html>
