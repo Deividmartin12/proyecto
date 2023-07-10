@@ -63,7 +63,11 @@ main{
   height:100vh;
 }
 
-#segundos_sub, #bebidas_sub{
+#segundos_subcategorias, #bebidas_subcategorias{
+  display: none;
+}
+
+#segundos_platos, #bebidas_platos{
   display: none;
 }
 

@@ -170,7 +170,7 @@
         </div> -->
 
 
-        <nav class="navbar navbar-expand-lg bg-danger">
+        <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container">
                 <ul class="nav nav-pills">
                     <li class="nav-item" id="entradas" onclick="mostrar_subcategorias('entradas');">
@@ -190,14 +190,11 @@
             </div>
         </nav>
 
-        <div class="container-fluid bg-dark">
-            <div id="entradas_sub">
+        <div class="container-fluid">
+            <div id="entradas_subcategorias">
                 <ul class="nav nav-justified">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sopas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Calientes</a>
+                        <a class="nav-link" onclick="mostrar_entradas('clasicas');" href="#">Clásicas</a>
                     </li>
                 </ul>
             </div>
@@ -206,43 +203,202 @@
             </div>
         </div>
 
-        <div class="container-fluid bg-dark">
-            <div id="segundos_sub">
+        <div class="container-fluid">
+            <div id="segundos_subcategorias">
                 <ul class="nav nav-justified">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Arroces</a>
+                        <a class="nav-link" onclick="mostrar_segundos('arroces_y_carnes');" href="#">Arroces y Carnes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pescados y mariscos</a>
+                        <a class="nav-link" onclick="mostrar_segundos('fritos');" href="#">Fritos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Frituras</a>
+                        <a class="nav-link" onclick="mostrar_segundos('pastas');" href="#">Pastas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="mostrar_segundos('marinos');" href="#">Marinos</a>
                     </li>
                 </ul>
             </div>
         </div>
-        
-        <div class="container-fluid bg-dark">
-            <div id="bebidas_sub">
+
+        <div class="container-fluid">
+            <div id="bebidas_subcategorias">
                 <ul class="nav nav-justified">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Refrescos</a>
+                        <a class="nav-link" onclick="mostrar_bebidas('refrescos');" href="#">Refrescos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gaseosas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Licores</a>
+                        <a class="nav-link" onclick="mostrar_bebidas('gaseosas');" href="#">Gaseosas</a>
                     </li>
                 </ul>
             </div>
+        </div>
+
+        <div class="container-fluid" id="entradas_platos">
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="clasicas">
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ensalada</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Aguadito Norteño</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Torta de choclo</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid" id="segundos_platos">
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="arroces_y_carnes">
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pollo saltado</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lomo saltado</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="fritos">
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Broaster</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mostrito</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="pastas">
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tallarín saltado</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tallarines verdes</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="marinos">
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sudado</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ceviche</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="bebidas_platos">
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="gaseosas">
+                <div class=" col">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cocacola</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Inkacola</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="refrescos">
+            <div class="col">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicha de Jora</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicha Morada</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 
 
     </main>
 
     <div class="linea-roja"></div>
-    
+
     <footer>
         <div class="footer-container">
             <div class="contact-info">
