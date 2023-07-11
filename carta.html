@@ -12,9 +12,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="/proyecto/js/carta.js"></script>
 </head>
+
 <body>
-    <nav>
+    <nav class="nav_principal">
         <div class="logo_cabecera">
             <a href="/HTML/index.html">
                 <img src="/proyecto/img/MLogoCabecera.png" alt="Logo Muchick" class="logo_cabecera">
@@ -29,7 +31,7 @@
             <a href="">UBICACIÓN</a>
         </div>
 
-       <div class="iconos_cabecera">
+        <div class="iconos_cabecera">
             <a href="">
                 <img src="img/iconoUsuario_2.png" alt="Icono Login">
             </a>
@@ -40,52 +42,365 @@
     </nav>
     <div class="espacio_nav"></div>
     <main>
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+        <!-- BARRA_CATEGORÍAS
+        <nav class="navbar navbar-expand-lg bg-danger">
+            <div class="container">
+                CATEGORÍAS
+                <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-entradas-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-entradas" type="button" role="tab" aria-controls="pills-entradas"
+                            aria-selected="false">ENTRADAS</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-segundos-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-segundos" type="button" role="tab" aria-controls="pills-segundos"
+                            aria-selected="false">SEGUNDOS</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-bebidas-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-bebidas" type="button" role="tab" aria-controls="pills-bebidas"
+                            aria-selected="false">BEBIDAS</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-postres-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-postres" type="button" role="tab" aria-controls="pills-postres"
+                            aria-selected="false">POSTRES</button>
+                    </li>
+                </ul>
+                BUSCADOR
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Plato" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://th.bing.com/th/id/R.e7dcd3ff1de1ae84eb3aa2f80efc284d?rik=1tS2dKqIWuxl%2bw&pid=ImgRaw&r=0"
-                        class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Sabores tradicionales</h5>
-                        <p>Disfruta de los platos más representativos de la gastronomía peruana</p>
+        </nav>
+
+        BARRA_SUBCATEGORÍAS 
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-entradas" role="tabpanel"
+                aria-labelledby="pills-entradas-tab" tabindex="0">
+                ENTRADAS_SUBCATEGORÍAS
+                <nav class="navbar navbar-expand-lg bg-dark">
+                    <div class="container">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-sopas-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-sopas" type="button" role="tab"
+                                    aria-controls="pills-sopas" aria-selected="false">Sopas</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-calientes-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-calientes" type="button" role="tab"
+                                    aria-controls="pills-calientes" aria-selected="false">Calientes</button>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://wallpapercave.com/wp/wp3119269.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 style="color:black;">Ingredientes de calidad</h5>
-                        <p style="color:black">Nos esforzamos para brindarte la mejor experiencia gastronómica</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://wholesomekids.ca/wp-content/uploads/2020/04/iStock-945606006.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Variedad de sabores</h5>
-                        <p>Tenemos un menú con diversos platillos para todos los gustos</p>
+                </nav>
+            </div>
+
+            <div class="tab-pane fade" id="pills-segundos" role="tabpanel" aria-labelledby="pills-segundos-tab"
+                tabindex="0">
+                SEGUNDOS_SUBCATEGORÍAS
+                <div class="container-fluid bg-dark">
+                    <div id="barra_sub">
+                        <ul class="nav nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">link</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+
+            <div class="tab-pane fade" id="pills-bebidas" role="tabpanel" aria-labelledby="pills-bebidas-tab"
+                tabindex="0">
+                BEBIDAS_SUBCATEGORÍAS
+                <div class="container-fluid bg-dark">
+                    <div id="barra_sub">
+                        <ul class="nav nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">link</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-postres" role="tabpanel" aria-labelledby="pills-postres-tab"
+                tabindex="0">
+                POSTRES_SUBCATEGORÍAS
+                <div class="container-fluid bg-dark">
+                    <div id="barra_sub">
+                        <ul class="nav nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">link</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container">
+                <ul class="nav nav-pills">
+                    <li class="nav-item" id="entradas" onclick="mostrar_subcategorias('entradas');">
+                        <a class="nav-link" href="#">ENTRADAS</a>
+                    </li>
+                    <li class="nav-item" id="segundos" onclick="mostrar_subcategorias('segundos');">
+                        <a class="nav-link" href="#">SEGUNDOS</a>
+                    </li>
+                    <li class="nav-item" id="bebidas" onclick="mostrar_subcategorias('bebidas');">
+                        <a class="nav-link" href="#">BEBIDAS</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Plato" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div id="entradas_subcategorias">
+                <ul class="nav nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="mostrar_entradas('clasicas');" href="#">Clásicas</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+
+            </div>
         </div>
+
+        <div class="container-fluid">
+            <div id="segundos_subcategorias">
+                <ul class="nav nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="mostrar_segundos('arroces_y_carnes');" href="#">Arroces y Carnes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="mostrar_segundos('fritos');" href="#">Fritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="mostrar_segundos('pastas');" href="#">Pastas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="mostrar_segundos('marinos');" href="#">Marinos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div id="bebidas_subcategorias">
+                <ul class="nav nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="mostrar_bebidas('refrescos');" href="#">Refrescos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="mostrar_bebidas('gaseosas');" href="#">Gaseosas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="entradas_platos">
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="clasicas">
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ensalada</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Aguadito Norteño</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Torta de choclo</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid" id="segundos_platos">
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="arroces_y_carnes">
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pollo saltado</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lomo saltado</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="fritos">
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Broaster</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mostrito</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="pastas">
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tallarín saltado</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tallarines verdes</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="marinos">
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sudado</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ceviche</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="bebidas_platos">
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="gaseosas">
+                <div class=" col">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cocacola</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Inkacola</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="refrescos">
+            <div class="col">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicha de Jora</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicha Morada</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        
+
+
     </main>
+
     <div class="linea-roja"></div>
+
     <footer>
         <div class="footer-container">
             <div class="contact-info">
@@ -144,4 +459,5 @@
 
 </html>
 </body>
+
 </html>

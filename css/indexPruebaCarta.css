@@ -4,7 +4,7 @@ body{
     margin: 0;
 }
 
-nav{
+.nav_principal{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -60,19 +60,17 @@ nav{
 /*MAIN*/
 main{
   background-color: rgb(255, 250, 217);
+  height:100vh;
 }
 
-#carouselExampleCaptions{
-  margin-inline: 350px;
+#segundos_subcategorias, #bebidas_subcategorias{
+  display: none;
 }
 
-.carousel-inner div img{
-  height: 500px;
+  #segundos_platos, #bebidas_platos{
+  display: none;
 }
 
-.carousel-item div{
-  box-shadow: burlywood;
-}
 /*MAIN*/
 
 /*FOOTER*/

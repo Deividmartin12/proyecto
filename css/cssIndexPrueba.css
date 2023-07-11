@@ -2,6 +2,10 @@
   background-color: #f9cece;
 }
 
+.divprincimain {
+  background-color: #f9cece3b;
+}
+
 .navbar-icon {
   margin-left: 30px;
   margin-right: 30px;
@@ -21,7 +25,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-image: url(../img/fondo_header.png);
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   left: 0;
   width: 100%;
@@ -39,10 +43,10 @@ nav {
   text-decoration: none;
   margin: 0;
   padding: 0;
-  padding-right: 35px;
+  padding-right: 50px;
   text-align: center;
   font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   color: #333;
 }
@@ -54,7 +58,7 @@ nav {
 }
 
 .nav-izquierda2 {
-  width: 50%;
+  width: 80%;
   padding: 0;
   margin: 0;
   display: flex;
@@ -77,7 +81,7 @@ nav {
 }
 
 .nav-izquierda3 img {
-  width: 55px;
+  width: 40px;
   margin: 20px;
 }
 
@@ -210,9 +214,7 @@ nav>div h1 {
 
 }
 
-main {
-  width: 100%;
-}
+
 
 /* main img {
     width: 1465px;
