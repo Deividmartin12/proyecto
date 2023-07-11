@@ -1,11 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUCHICK</title>
+    <!--Css-->
+    <link rel="stylesheet" href="css/reserva.css" />
+    <!--Bosstrar-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 ">
+        <div class="container-fluid" style="background-image: url(../img/fondo_header.png); background-size: 1500px;">
+            <a class="navbar-brand" href="#">
+                <img class="img" src="../img/MLogoCabecera.png" alt="Muchick" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container-fluid d-flex justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-4">
+                            <a class="nav-link" href="#">¿QUIÉNES SOMOS?</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link" href="#">RESERVAR MESA</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link" href="#">DELIVERY</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link" href="#">CARTA</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand" href="#">
+                    <img class="img" src="img/iconoUsuario_2.png" alt="Login" height="40">
+                    <img class="img" src="img/carrito.png" alt="Carrito" height="40">
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <br>
+        <h1>RERVACION DE MESA</h1>
+        <img src="" alt="" srcset=""> 
+        <p>Muchick es un restaurante que combina platos típicos y comida rápida en un ambiente acogedor. Su carta ofrece una variedad de sabores auténticos, desde ceviche y ají de gallina hasta hamburguesas gourmet y sándwiches deliciosos. El servicio es amable y rápido, y los postres son irresistibles. En resumen, Muchick es el lugar perfecto para disfrutar de una experiencia culinaria memorable que fusiona lo mejor de ambos mundos gastronómicos.</p> <BR></BR>
+        
+        <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="car_dia">
+                    <div class="card text-bg-light mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <i class="bi bi-alarm "></i>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">CARTA DIA:</h5>
+                              <p class="card-text">Lunes a domingo 10am - 4pm</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="celular">
+                    <div class="card text-bg-dark mb-3" style=" max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <i class="bi bi-alarm-fill "></i>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">CELULAR:</h5>
+                              <p class="card-text">+51 923 505 083</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+          </div>
+          <br>
+        <div class="car_noche">
+            <div class="card text-bg-dark mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <i class="bi bi-alarm-fill "></i>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">CARTA NOCHE:</h5>
+                      <p class="card-text">Lunes a domingo 7pm - 12pm</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <BR></BR>
+
+
+
+
+       <form action="">
+         <div ><h2>SELECCIONAR FECHA</h2>
+            <input type="date" id="fecha1" name="" id="">
+        </div>
+        <BR></BR>
+        <div class="hora">
+            <h2>SELECCIONAR LA HORA</h2>
+            <input type="time" id="fecha1" name="" id="">
+        </div>
+        <BR></BR>
+        <div>
+            <h2>¿EN QUE ZONA DESEAS RESERVAR?</h2>
+            
+                <button class="btn btn-outline-secondary dropdown-toggle" id="fecha1" type="button" data-bs-toggle="dropdown" aria-expanded="false">SELECCIONAR</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">SALA 1</a></li>
+                  <li><a class="dropdown-item" href="#">SALA 2</a></li>
+                </ul>
+              <BR></BR>
+
+              <div class="salon">
+              <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-primary">1</button>
+                  
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                  <button type="button" class="btn btn-secondary">5</button>
+                  
+                </div>
+                <div class="btn-group" role="group" aria-label="Third group">
+                  <button type="button" class="btn btn-info">8</button>
+                </div>
+                
+              </div>
+            <br>
+              <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"></div>
+              <div class="btn-group" role="group" aria-label="Third group">
+                <button type="button" class="btn btn-info">8</button>
+              </div>
+              </div>
+
+                <br>          
+              <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-primary">1</button>
+                  
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                  <button type="button" class="btn btn-secondary">5</button>
+                  
+                </div>
+                <div class="btn-group" role="group" aria-label="Third group">
+                  <button type="button" class="btn btn-info">8</button>
+                </div>
+                
+              </div>
+
+              </div>
+
+        </div>
+        <BR></BR>
+        <button type="button" class="btn btn-success btn-lg">Large button</button>
+        <button type="button" class="btn btn-danger btn-lg">Large button</button>
+        
+       </form>
+
+
+
+
+    </div>
+
+
+    <div class=" linea-roja"></div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Contacto & Atención al cliente</h3>
+                <p>&nbsp; Contactos:</p>
+                <p>&nbsp;&nbsp; WhatsApp: +51 975 544 912</p>
+                <p>&nbsp;&nbsp; Teléfono: (01) 999 9999</p>
+                <div class="reclamaciones">
+                    <h3>Libro de reclamaciones</h3>
+                    <a href="pagina_reclamaciones.html"><img src="img/libro1.jpeg"></a>
+                </div>
+                <br>
+            </div>
+            <div class="policies">
+                <h3>Políticas & Términos</h3>
+                <ul>
+                    <li><a href="#">&nbsp; Términos y condiciones de la web</a></li>
+                    <li><a href="#">&nbsp; Políticas de privacidad</a></li>
+                    <li><a href="#">&nbsp; Políticas de delivery</a></li>
+                    <li><a href="#">&nbsp; Términos y promociones</a></li>
+                    <li><a href="#">&nbsp; Campañas</a></li>
+                </ul>
+            </div>
+            <br>
+            <div class="subscribe">
+                <h3>Recibe nuestras ofertas y novedades</h3>
+                <p>Suscríbete y recibe todas nuestras ofertas exclusivas y novedades</p>
+                <form action="">
+                    <label for="">Ingresa tu número de documento</label> <br>
+                    <input type="text"><br><br>
+                    <label for="">Ingresa tu email</label><br>
+                    <input type="text"><br><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">He leído y acepto la política y términos</label>
+                    <br> <br>
+                    <button type="submit">Suscribirme</button>
+                </form>
+            </div>
+        </div>
+        <br>
+        <hr style="background-color: white; color: white; margin: 0%;">
+        <div class="abajo" id="abajo" style="background-color: black;">
+            <img src="img/logoPrueva.jpg" width="100" alt="">
+            <div style="background-color: black;" class="footer_abajo">
+                <h1>MUCHICK</h1>
+                <h2>Síguenos:
+                    <img id="imagen-siguenos" src="img/facebook.png" width="35" alt="">
+                    <img id="imagen-siguenos" src="img/instagram.png" width="35" alt="">
+                </h2>
+                <p>Derechos de autor</p>
+                <p>&copy; Año Empresa. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
+<script src="js/index.js"></script>
+
 </html>
