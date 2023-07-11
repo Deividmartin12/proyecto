@@ -581,3 +581,18 @@ hr {
   border-radius: 3rem;
   border: none;
 }
+
+.datosRegistros{
+  width: 80%;
+  margin-bottom: 10px;
+}
+.imagenLogo{
+  height: 20%;
+}
+.datosRegistros input[type="text"],
+.datosRegistros input[type="email"],
+.datosRegistros input[type="password"],
+.datosRegistros input[type="number"] {
+  width: 100%;
+  box-sizing: border-box;
+}
