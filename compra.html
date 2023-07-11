@@ -16,68 +16,139 @@
 
 <body>
     <header>
-        <nav>
+        <nav id="barraprinci">
             <div class="nav-izquierda1">
-                <a href="indexPrueba.html">
+                <a href="index.html">
                     <img src="img/MLogoCabecera.png" alt="">
                 </a>
             </div>
             <div class="nav-izquierda2">
 
-                <li><a href="">¿QUIÉNES SOMOS?</a></li>
+                <li><a href="quienesSomos.html">¿QUIÉNES SOMOS?</a></li>
                 <li><a href="">RESERVAR MESA</a></li>
-                <li><a href="">DELIVERY</a></li>
-                <li><a href="">CARTA</a></li>
+                <li><a href="delivery.html">DELIVERY</a></li>
+                <li><a href="carta_prueba.html">CARTA</a></li>
 
             </div>
             <div class="nav-izquierda3">
-                <a href="">
+                <a href="login.html">
                     <img src="img/iconoUsuario_2.png" alt="">
                 </a>
                 <a href="compra.html">
                     <img src="img/carrito.png" alt="">
                 </a>
             </div>
-
-
-
         </nav>
     </header>
-
-
-    <main id="pagoPedido">
-        <h1 class="pago">Pago de pedido</h1>
-        <h2>DATOS</h2>
-        <div class="botonesDatos">
-            <button id="btnApple">Apple</button>
-            <button id="btnFacebook">Facebook</button>
-            <button id="btnGoogle">Google</button>
+    <div class="pagopedido">
+        <div>
+            <h1>PAGO PEDIDO</h1>
         </div>
-        <h2>DATOS</h2>
-        <div class="registro_de_datos">
-            <div class="datosRegistros">
-                <h2>Nombres</h2>
-                <input type="text" name="Nombres">
-                <h2>Apellidos</h2>
-                <input type="text" name="Apellidos">
-                <h2>Email</h2>
-                <input type="email" name="Email">
-                <h2>Password</h2>
-                <input type="password">
-                <h2>Celular</h2>
-                <input type="number" name="Celular">
-                <h2>Dirección</h2>
-                <input type="text" name="Dirección">
-            </div>
-            <div class="imagenLogo">
-                <img src="img/logoPrueva.jpg" alt="logo">
+        <div class="datosBotones">
+            <h2 class="sub-pago">Datos</h2 class="sub-pago">
+            <div class="botonesDatos">
+                <button id="btnApple">Apple</button>
+                <button id="btnFacebook">Facebook</button>
+                <button id="btnGoogle">Google</button>
             </div>
         </div>
-        
-    </main>
+        <section id="registro">
+            <h2 class="sub-pago">Datos</h2>
+            <form action="">
+                <div class="datosRegistros">
+                    <div class="nombre">
+                        <label>Nombres</label>
+                        <input type="text" name="Nombres" placeholder="Nombres" required>
+                    </div>
+
+                    <div class="apellidos">
+                        <label>Apellidos</label>
+                        <input type="text" name="Apellidos" placeholder="Apellidos" required>
+                    </div>
+                </div>
+                <div class="datosRegistros">
+                    <div class="email"><label>Email</label>
+                        <input type="email" name="Email" placeholder="Email" required>
+                    </div>
+                    <div class="pass"><label>Contraseña</label>
+                        <input type="password" placeholder="Contraseña" required>
+                    </div>
+                </div>
+                <div class="datosRegistros">
+                    <div class="cel"><label>Celular</label>
+                        <input type="text" name="Celular" placeholder="Celular">
+                    </div>
+                    <div class="direc">
+                        <label>Dirección</label>
+                        <input type="text" name="Dirección" placeholder="Dirección" required>
+                    </div>
+                </div>
+
+                <div class="datosRegistros">
+                    <div><button type="button">Enviar</button></div>
+                </div>
+            </from>
+        </section>
+
+        <div>
+            <h2 class="sub-pago">Datos del pedido</h2>
+            <div class="" id="datos_pedido">xkdansdsad</div>
+        </div>
+
+        <div class="">
+            <h2 class="sub-pago">Eleguir el método de pago</h2>
+            <form>
+                <fieldset>
+                    <label>
+                        <input type="radio" name="metodo" value="Visa"> Visa
+                    </label>
+                    <label>
+                        <input type="radio" name="metodo" value="Yape"> Yape
+                    </label>
+                    <label>
+                        <input type="radio" name="metodo" value="Pin"> Pin
+                    </label>
+                    <label>
+                        <input type="radio" name="metodo" value="Pin"> Pin
+                    </label>
+                </fieldset>
+            </form>
+        </div>
+        <div class="">
+            <h2 class="sub-pago">Tipo comprobante</h2>
+            <form>
+                <fieldset>
+                    <label>
+                        <input type="radio" name="comprobante" value="Boleta"> Boleta
+                    </label>
+                    <label>
+                        <input type="radio" name="comprobante" value="Factura"> Factura
+                    </label>
+
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <h2 class="sub-pago">Políticas de la empresa</h2>
+            <p>Política de cancelación de reserva: Establecer un período de tiempo mínimo para cancelar una
+                reserva
+                sin
+                cargo adicional. </p>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" id="cbox1" value="first_checkbox" required> Acepto terminos y
+                condiciones
+            </label>
+            <br>
+            <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Acepto que me envién
+                promociones</label>
+        </div>
 
 
-    <div class="linea-roja"></div>
+    </div>
+
+    <div class=" linea-roja"></div>
 
 
     <footer>
@@ -134,6 +205,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/index.js"></script>
+
+</body>
+<script src="js/index.js"></script>
 
 </html>
