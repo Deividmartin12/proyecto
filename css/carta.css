@@ -7,6 +7,7 @@
     /* margin-top: 10px;
     margin-bottom: 15px; */
     overflow: hidden;
+    margin: 4px;
 }
 
 .card:hover{
@@ -14,20 +15,22 @@
 }
 
 .card img{
-   object-fit: contain;
+   
    background-size: cover;
+   width: auto;
+   height: fit-content;
 }
 
-.card div h5{
-    overflow: hidden;
-}
 
 .card img:hover{
     transition: all 0.5s;
-    transform: scale(1.15);
+    transform: scale(1.14);
 }
 
 #busqueda_fallida{
     display: none;
 }
 
+.modal{
+    left: 0;
+}
