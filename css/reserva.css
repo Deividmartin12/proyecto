@@ -1,3 +1,7 @@
+form{
+    align-items: center;
+    text-align: center;
+}
 #tiempo{
     width: 5rem;
     align-items: center;
