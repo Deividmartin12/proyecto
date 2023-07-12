@@ -143,37 +143,27 @@
             <br>
 
 
-            <div class="salon">
-              <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                <div class="btn-group me-2" role="group" aria-label="First group">
-                  <button type="button" class="btn btn-primary">1</button>
-                </div>
-                <div class="btn-group me-2" role="group" aria-label="Second group">
-                  <button type="button" class="btn btn-secondary">5</button>
-                </div>
-                <div class="btn-group" role="group" aria-label="Third group">
-                  <button type="button" class="btn btn-info">8</button>
-                </div>
+            <div class="containe">
+              <h1>Reserva de mesas</h1>
+              <div id="tables">
+                <div class="table" data-id="1"></div>
+                <div class="table" data-id="2"></div>
+                <div class="table" data-id="3"></div>
+                <div class="table center" data-id="4"></div>
+                <div class="table" data-id="5"></div>
+                <div class="table" data-id="6"></div>
               </div>
-              <br>
-              <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                <div class="btn-group" role="group" aria-label="Fourth group">
-                  <button type="button" class="btn btn-info">8</button>
-                </div>
+              <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button id="saveBtn" type="button" class="btn btn-outline-primary">Guardar selección</button>
+                <button id="clearBtn" type="button" class="btn btn-outline-primary">Quitar selección</button>
+                <button id="resetBtn" type="button" class="btn btn-outline-primary">Reiniciar mesas</button>
               </div>
+              
+              <div id="message" ></div>
             </div>
+
             <br>
-            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-              <div class="btn-group me-2" role="group" aria-label="Fifth group">
-                <button type="button" class="btn btn-primary">1</button>
-              </div>
-              <div class="btn-group me-2" role="group" aria-label="Sixth group">
-                <button type="button" class="btn btn-secondary">5</button>
-              </div>
-              <div class="btn-group" role="group" aria-label="Seventh group">
-                <button type="button" class="btn btn-info">8</button>
-              </div>
-            </div>
+            
             <br>
             <button type="button" class="btn btn-success btn-lg">Large button</button>
             <button type="button" class="btn btn-danger btn-lg">Large button</button>
@@ -246,6 +236,6 @@
     </footer>
 
 </body>
-<script src="js/index.js"></script>
+<script src="js/reservarmesa.js"></script>
 
 </html>

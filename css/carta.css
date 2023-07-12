@@ -66,10 +66,6 @@
     display: none;
 }
 
-.modal{
-    left: 0;
-}
-
 .botones_nav_carrito{
     display: flex;
 }
@@ -122,4 +118,3 @@
     border-color: gray;
     background-color: rgb(70,70,70);
 }
-
