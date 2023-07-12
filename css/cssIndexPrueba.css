@@ -129,11 +129,6 @@ nav {
   }
 }
 
-
-
-
-
-
 .navbar-nav {
   margin: auto;
 }
@@ -569,17 +564,52 @@ hr {
   margin-top: 0;
 }
 
-.botonesDatos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+
+
+/*Pago pedido*/
+.pagopedido{
+  background-color: #fef8a0;
+  padding: 40px 0px;
 }
 
-.botonesDatos button {
-  flex: 1;
-  height: 30px;
-  margin: 10px 150px; 
-  border-radius: 3rem;
-  border: none;
+.pagopedido .sub-pago{
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
+
+/*Formulario*/
+#registro form{
+  max-width: 90%;
+  margin: 0 auto;
+}
+.datosRegistros{
+  display: flex;
+}
+
+.datosRegistros div,
+.sub-pago{
+  padding: 20px;
+  flex: 1;
+}
+
+.datosRegistros label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.datosRegistros input{
+  background-color: #fefce0;
+  border-radius: 10px;
+  border: 1px solid  #fef8a0;
+  padding: 10px 5px;
+  outline: 0;
+  width: 100%;
+}
+
+.datosRegistrosinput:focus{
+  border-color: #ded552;
+}
+
+/*Responsive*/
+

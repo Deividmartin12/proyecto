@@ -15,56 +15,196 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="nav-izquierda1">
-                <a href="indexPrueba.html">
-                    <img src="img/MLogoCabecera.png" alt="">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 ">
+        <div class="container-fluid" style="background-image: url(../img/fondo_header.png); background-size: 1500px;">
+            <a class="navbar-brand" href="#">
+                <img class="img" src="../img/MLogoCabecera.png" alt="Muchick" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container-fluid d-flex justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-4">
+                            <a class="nav-link" href="#">¿QUIÉNES SOMOS?</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link" href="#">RESERVAR MESA</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link" href="#">DELIVERY</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link" href="#">CARTA</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand" href="#">
+                    <img class="img" src="../img/iconoUsuario_2.png" alt="Login" height="40">
+                    <img class="img" src="../img/carrito.png" alt="Carrito" height="40">
                 </a>
             </div>
-            <div class="nav-izquierda2">
 
-                <li><a href="">¿QUIÉNES SOMOS?</a></li>
-                <li><a href="">RESERVAR MESA</a></li>
-                <li><a href="">DELIVERY</a></li>
-                <li><a href="">CARTA</a></li>
-
-            </div>
-            <div class="nav-izquierda3">
-                <a href="">
-                    <img src="img/iconoUsuario_2.png" alt="">
-                </a>
-                <a href="compra.html">
-                    <img src="img/carrito.png" alt="">
-                </a>
-            </div>
-
-
-
-        </nav>
-    </header>
-
-
-    <main id="pagoPedido">
-        <h1 class="pago">Pago de pedido</h1>
-        <h2>DATOS</h2>
-        <div class="botonesDatos">
-            <button id="btnApple">Apple</button>
-            <button id="btnFacebook">Facebook</button>
-            <button id="btnGoogle">Google</button>
         </div>
-        <h2>DATOS</h2>
-        <div class="datosRegistros">
-            <h2>Nombre</h2>
-            <h2>Apellidos</h2>
-            <h2>Email</h2>
-            <h2>Celular</h2>
-            <h2>Dirección</h2>
+    </nav>
+    <div class="pagopedido">
+        <div>
+            <h1>PAGO PEDIDO</h1>
         </div>
-    </main>
+        <div class="datosBotones">
+            <h2 class="sub-pago">Datos</h2>
+            <div class="botonesDatos text-center flex-colum">
+                <a class="btn btn-primary w-30 d-inline-block col-md-3 col-sm-11 mb-1 mb-md-0" href="#"
+                    role="button">Apple</a>
+                <a class="btn btn-primary w-30 d-inline-block col-md-3 col-sm-11 mb-1 mb-md-0" href="#"
+                    role="button">Google</a>
+                <a class="btn btn-primary w-30 d-inline-block col-md-3  col-sm-11  mb-1 mb-md-0" href="#"
+                    role="button">Facebook</a>
+            </div>
+        </div>
+
+        <section id="registro">
+            <h2 class="sub-pago">Datos</h2>
+            <form action="">
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
+                    <label for="floatingInput">Nombre</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="Apellido">
+                    <label for="floatingPassword">Apellido</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+                    <label for="floatingPassword">Contraseña</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingPassword" placeholder="Celular">
+                    <label for="floatingPassword">Celular</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="Dirección">
+                    <label for="floatingInput">Dirección</label>
+                </div>
 
 
-    <div class="linea-roja"></div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button">Button</button>
+                </div>
+                </from>
+
+        </section>
+
+        <div>
+            <h2 class="sub-pago">Datos del pedido</h2>
+            <div class="" id="datos_pedido">xkdansdsad</div>
+        </div>
+
+
+        <div class="row m-0 justify-content-center align-items-center">
+            <div class="metodoPago col-md-7 col-sm-12 pb-4">
+                <h2 class="">Elegir el método de pago</h2>
+                <form class="">
+                    <fieldset class="d-flex gap-4">
+                        <div class="fs-4">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="visa"
+                                checked>
+                            <label class="form-check-label" for="visa">Visa</label>
+                        </div>
+                        <div class="fs-4">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                                id="MasterCard" checked>
+                            <label class="form-check-label " for="MasterCard">MasterCard</label>
+                        </div>
+                        <div class="fs-4">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="yape"
+                                checked>
+                            <label class="form-check-label" for="yape">Yape</label>
+                        </div>
+                        <div class="fs-4">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="Plin"
+                                checked>
+                            <label class="form-check-label" for="Plin">Plin</label>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="comprobante col-md-5 col-sm-12">
+                <h2 class="text">Tipo comprobante</h2>
+                <form class="text">
+                    <fieldset class="d-flex gap-4">
+                        <div class="fs-4">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="Boleta"
+                                checked>
+                            <label class="form-check-label" for="Boleta">Boleta</label>
+                        </div>
+                        <div class="fs-4">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                                id="Factura" checked>
+                            <label class="form-check-label" for="Factura">Factura</label>
+                        </div>
+
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="sub-pago">Políticas de la empresa</h2>
+            <div class="card mx-5">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-1">
+                        <p>
+                            Mediante el uso de nuestra plataforma de reservas, pedidos y compra de experiencias en
+                            línea en restaurantes afiliados a MUCHICK S.A. (en adelante, la “Plataforma”), que incluye
+                            una página web (www.MUCHICK.pe y www.MUCHICK.la), aplicaciones móviles para iPhone y
+                            Android, Widget (botón/motor de reservas que MUCHICK instala en la Página Web y/o redes
+                            sociales del restaurante y/o Página Web o Apps de empresas aliadas), Red de MUCHICK
+                            (integraciones que MUCHICK hace con terceros para listar restaurantes y/o recibir reservas
+                            en línea a través de sus Páginas Web y aplicaciones móviles), programa de puntos,
+                            aplicaciones y servicios (incluyendo sin limitarse a los correos electrónicos y cualquier
+                            material que le sea proporcionado conjuntamente con los servicios) (en adelante, los
+                            “Servicios”) que son operados por o controlados por MESA 247 S.A, usted está entrando en un
+                            acuerdo con nosotros de conformidad con los términos y condiciones que se describen en este
+                            documento (los “Términos de Uso”). Nuestra Política de Privacidad y de Protección de
+                            Datos Personales y la Política de Reservas forman parte integrante de estos Términos de
+                            Uso. Para efectos de estos Términos de Uso y demás Políticas toda referencia a “nos”,
+                            “nosotros”, “nuestra”, se refiere a MUCHICK S.A.
+                        </p>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row m-0 mx-5 m-2">
+            <div class="col-md-6 fs-4">
+                <input type="checkbox" id="cbox2" value="second_checkbox">
+                <label for="cbox2">Acepto terminos y condiciones</label>
+            </div>
+            <div class="col-md-6 fs-4">
+                <input type="checkbox" id="cbox2" value="second_checkbox">
+                <label for="cbox2">Acepto que me envién promociones</label>
+            </div>
+
+        </div>
+        <div class="d-grid gap-4 mx-5">
+            <button class="btn btn-primary" type="button">Button</button>
+        </div>
+    </div>
+
+
+    <div class=" linea-roja"></div>
 
 
     <footer>
@@ -121,6 +261,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/index.js"></script>
+
+</body>
+<script src="js/index.js"></script>
 
 </html>
