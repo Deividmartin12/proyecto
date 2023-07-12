@@ -41,7 +41,6 @@ p {
 
 .contenido {
   background-color: #fef8a0;
-
 }
 
 /*NAV*/
@@ -55,12 +54,9 @@ body {
   justify-content: space-around;
   height: 80px;
   width: 100%;
-  /*background-color: rgb(255, 250, 217);*/
-  background-image: url(/proyecto/img/fondo_header.png);
+  background-image: url(/img/fondo_header.png);
   background-size: 1550px;
-  position: fixed;
   z-index: 999;
-
 }
 
 .espacio_nav {
