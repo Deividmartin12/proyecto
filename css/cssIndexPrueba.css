@@ -611,5 +611,8 @@ hr {
   border-color: #ded552;
 }
 
-/*Responsive*/
+.metodoPago,.comprobante {
+  background-color: #fefce0;
+  border-radius: 15px;
+}
 

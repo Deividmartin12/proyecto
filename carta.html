@@ -54,35 +54,73 @@
     </nav>
 
 
-    <!-- Modal Carrito-->
-    <div class="modal fade" id="modal_carrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">AGREGAR AL CARRITO</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="container-fluid">
+            <div id="bebidas_subcategorias">
+                <ul class="nav nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="mostrar_bebidas('refrescos');" href="#">Refrescos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="mostrar_bebidas('gaseosas');" href="#">Gaseosas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="entradas_platos">
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="clasicas">
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ensalada</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    ...
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Aguadito Norteño</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" id="agregar_carrito">Agregar</button>
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Torta de choclo</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Modal Imagen-->
-    <div class="modal fade" id="modal_imagen" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered active">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel2">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ...
+        <div class="container-fluid" id="segundos_platos">
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="arroces_y_carnes">
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pollo saltado</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lomo saltado</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer justify-content-center">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -155,11 +193,6 @@
                     <img src="img/buscar_icono.png" alt="lupa">
                 </form>
             </div>
-        </nav>
-
-
-
-
         <!-- BARRA SUBCATEGORIAS -->
         <!-- CONTENEDOR DEL TAB SUPERIOR -->
         <div class="tab-content" id="myTabContent">
@@ -261,13 +294,8 @@
             </div>
         </div>
 
-        <div class="container text-center" id="busqueda_fallida">
-            <h3>
-                Lo sentimos, no tenemos ese platillo
-            </h3>
-        </div>
-    </main>
 
+</html>
 </body>
 <script src="../js/carta.js"></script>
 
