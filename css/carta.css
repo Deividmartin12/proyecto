@@ -8,6 +8,15 @@
     margin-bottom: 15px; */
     overflow: hidden;
     margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.card a{
+    width: 100%;
 }
 
 .card:hover{
@@ -15,10 +24,9 @@
 }
 
 .card img{
-   
-   background-size: cover;
-   width: auto;
-   height: fit-content;
+   width: 400px;
+   height: 200px;
+   object-fit: cover;
 }
 
 
@@ -33,4 +41,30 @@
 
 .modal{
     left: 0;
+}
+
+.botones_nav_carrito{
+    display: flex;
+}
+
+.botones_nav_carrito input{
+    width: 40px;
+    text-align: center;
+}
+
+.botones_nav_carrito button{
+    width: 30px;
+    font-size:large;
+}
+
+.navbar h2,.div{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navbar h2,.div,h1{
+    display: flex;
+    
+    
 }

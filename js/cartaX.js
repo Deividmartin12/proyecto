@@ -15,11 +15,14 @@ let id_marinos = document.getElementById("btn_marinos");
 let id_gaseosas = document.getElementById("btn_gaseosas");
 let id_refrescos = document.getElementById("btn_refrescos");
 
+let btn_agregar_carrito = document.getElementById("agregar_Carrito");
+
 let categorias = ['entradas', 'segundos', 'bebidas'];
 
 let subcategorias = ['clasicas', 'arroces_y_carnes', 'fritos', 'pastas', 'marinos', 'gaseosas', 'refrescos'];
 
 var filtro_busqueda = [];
+
 
 let menu = [
     {
@@ -250,13 +253,15 @@ function mostrar_platos(lista) {
 
         document.getElementById('platos').innerHTML += `
         <div class="col" id="${lista[i].nombre}">
-                    <div class="card text-center">
-                        <img src="${lista[i].src}" class="card-img-top" alt="...">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal_imagen">
+                        <img  
+                        src="${lista[i].src}" class="card-img-top" alt="${lista[i].nombre}">
                         <div class="card-body">
                             <h5 class="card-title">${lista[i].nombre}</h5>
                             <p class="card-text"> S/. ${lista[i].precio}
                             </p>
-                            <a href="#" class="btn btn-primary px-5">Agregar</a>
+                            <a href="#" class="btn btn-primary px-5" data-bs-toggle="modal" 
+                            data-bs-target="#modal_carrito" >Agregar</a>
                         </div>
                     </div>
                 </div>
@@ -423,7 +428,7 @@ document.getElementById("btn_todos_bebidas").addEventListener("click", () => {
 
 
 
-document.getElementById("sub_entradas-tab").addEventListener("click", () => {
+/* document.getElementById("sub_entradas-tab").addEventListener("click", () => {
     for (var i = 0; i < menu.length; i++) {
         const ca = menu[i].subcategoria;
         const nom = menu[i].nombre;
@@ -446,7 +451,7 @@ document.getElementById("sub_segundos-tab").addEventListener("click", () => {
             document.getElementById(nom).style.display = 'block';
         }else{
             document.getElementById(nom).style.display = 'none';
-        } */
+        } 
     }
 });
 
@@ -461,6 +466,50 @@ document.getElementById("sub_bebidas-tab").addEventListener("click", () => {
             document.getElementById(nom).style.display = 'none';
         }
     }
-});
+}); */
 
+
+
+document.getElementById("buscador").addEventListener("keyup", function () {
+    let texto_ingresado = document.getElementById("buscador").value;
+
+    filtro_busqueda = menu.filter(function (a) {
+        if (a.nombre.toUpperCase().includes(texto_ingresado.toUpperCase())) {
+
+            /* xx=a.nombre;
+
+            return xx; */
+            document.getElementById(a.nombre).style.display="block";
+        }else{
+            document.getElementById(a.nombre).style.display="none";
+        }
+    });
+
+    console.log(filtro_busqueda);
+
+    /* for (let i = 0; i < menu.length; i++) {
+        const element = menu[i];
+
+        if (element.nombre == filtro_busqueda) {
+            document.getElementById(menu[i].nombre).style.display = "block";
+        } else {
+            document.getElementById(menu[i].nombre).style.display = "none";
+        }
+    } */
+
+
+
+    
+
+
+
+    /* if(this.nodeValue==""){
+        mostrar_platos(filtro_busqueda);
+    
+    }else if (filtro_busqueda==""){
+        document.querySelectorAll("card").innerHTML = "";
+    }else{
+        mostrar_platos.value[filtro_busqueda];
+    } */
+});
 
