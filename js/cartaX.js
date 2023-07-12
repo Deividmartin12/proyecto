@@ -273,34 +273,6 @@ function mostrar_platos(lista) {
 
 
 
-
-
-/* document.getElementById("buscador").addEventListener("keyup", function () {
-    let text = document.getElementById("buscador").value;
-
-    filtro_busqueda = menu.filter(function (a) {
-        if (a.nombre.includes(text)) {
-            return a.nombre;
-        }
-    });
-
-    if (this.value == "") {
-        mostrar_platos(menu);
-
-    } else {
-        if (filtro_busqueda == "") {
-            document.getElementById("busqueda_fallida").style.display = 'block';
-            document.getElementById("col").innerHTML = "";
-
-        } else {
-            mostrar_platos(filtro_busqueda);
-            document.getElementById("busqueda_fallida").style.display = 'none';
-        }
-    }
-}); */
-
-
-
 document.getElementById("btn_clasicas").addEventListener("click", () => {
     for (var i = 0; i < menu.length; i++) {
         const ca = menu[i].subcategoria;
@@ -427,46 +399,19 @@ document.getElementById("btn_todos_bebidas").addEventListener("click", () => {
 });
 
 
-
-/* document.getElementById("sub_entradas-tab").addEventListener("click", () => {
-    for (var i = 0; i < menu.length; i++) {
-        const ca = menu[i].subcategoria;
-        const nom = menu[i].nombre;
-
-        if (ca == "refrescos" || ca == "gaseosas") {
-            document.getElementById(nom).style.display = 'block';
-        } else {
-            document.getElementById(nom).style.display = 'none';
-        }
-    }
+id_entradas.addEventListener("click", () => {
+    id_todos_entradas.click();
 });
 
-document.getElementById("sub_segundos-tab").addEventListener("click", () => {
-    for (var i = 0; i < menu.length; i++) {
-        const ca = menu[i].subcategoria;
-        const nom = menu[i].nombre;
+id_segundos.addEventListener("click", () => {
+    id_todos_segundos.click();
 
-        document.getElementById("btn_todos_segundos").onselect(this.addEventListener("click"));
-        /* if(ca=="refrescos" || ca=="gaseosas"){
-            document.getElementById(nom).style.display = 'block';
-        }else{
-            document.getElementById(nom).style.display = 'none';
-        } 
-    }
 });
 
-document.getElementById("sub_bebidas-tab").addEventListener("click", () => {
-    for (var i = 0; i < menu.length; i++) {
-        const ca = menu[i].subcategoria;
-        const nom = menu[i].nombre;
+id_bebidas.addEventListener("click", () => {
+    id_todos_bebidas.click();
+});
 
-        if (ca == "refrescos" || ca == "gaseosas") {
-            document.getElementById(nom).style.display = 'block';
-        } else {
-            document.getElementById(nom).style.display = 'none';
-        }
-    }
-}); */
 
 
 
@@ -475,11 +420,16 @@ document.getElementById("buscador").addEventListener("keyup", function () {
 
     filtro_busqueda = menu.filter(function (a) {
         if (a.nombre.toUpperCase().includes(texto_ingresado.toUpperCase())) {
-            document.getElementById(a.nombre).style.display="block";
-        }else{
-            document.getElementById(a.nombre).style.display="none";
+            document.getElementById(a.nombre).style.display = "block";
+            document.getElementById("busqueda_fallida").style.display = "none";
+        } else {
+            document.getElementById(a.nombre).style.display = "none";
+            document.getElementById("busqueda_fallida").style.display = "block";
         }
     });
 
 });
 
+/* document.querySelector("#myTabContent").querySelector(".nav-link").addEventListener("click",function(){
+    document.querySelector("#myTabContent").querySelector(".nav-link").classList.add("active");
+}); */

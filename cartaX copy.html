@@ -116,39 +116,13 @@
     </div>
 
 
-    <!-- <nav class="nav_principal">
-        <div class="logo_cabecera">
-            <a href="/HTML/index.html">
-                <img src="../img/MLogoCabecera.png" alt="Logo Muchick" class="logo_cabecera">
-            </a>
-        </div>
-
-        <div class="links_cabecera">
-            <a href="">¿QUIÉNES SOMOS?</a>
-            <a href="">RESERVAR MESA</a>
-            <a href="">DELIVERY</a>
-            <a href="">CARTA</a>
-            <a href="">UBICACIÓN</a>
-        </div>
-
-        <div class="iconos_cabecera">
-            <a href="">
-                <img src="../img/iconoUsuario_2.png" alt="Icono Login">
-            </a>
-            <a href="">
-                <img src="../img/carrito.png" alt="Icono carrito">
-            </a>
-        </div>
-    </nav>
-    <div class="espacio_nav"></div> -->
-
     <main>
         <!-- BARRA CATEGORIAS -->
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg" id="barra_categorias">
             <!-- BOTON RESPONSIVE -->
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" id="boton_contenedor_categorias" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -177,8 +151,8 @@
                 </div>
                 <!-- BUSCADOR -->
                 <form class="d-flex" role="search" id="buscador_form">
-                    <input class="form-control me-2" type="text" placeholder="Plato" aria-label="Search" id="buscador">
-                    <img src="https://www.freeiconspng.com/uploads/search-icon-png-21.png" alt="lupa">
+                    <input type="text" placeholder="Plato" aria-label="Search" id="buscador">
+                    <img src="./img/buscar_icono.png" alt="lupa">
                 </form>
             </div>
         </nav>
@@ -230,40 +204,6 @@
                 <!-- BARRA SUBCATEGORIAS SEGUNDOS -->
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
-                        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="nav nav-tabs " id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="btn_todos_segundos" data-bs-toggle="pill"
-                                        data-bs-target="#" type="button" role="tab" aria-controls="pills-home"
-                                        aria-selected="true">Todos</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="btn_arroces_y_carnes" data-bs-toggle="pill"
-                                        data-bs-target="#sub_arroces_y_carnes" type="button" role="tab"
-                                        aria-controls="pills-home" aria-selected="true">Arroces y Carnes</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="btn_fritos" data-bs-toggle="pill"
-                                        data-bs-target="#sub_fritos" type="button" role="tab"
-                                        aria-controls="pills-profile" aria-selected="false">Fritos</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="btn_pastas" data-bs-toggle="pill"
-                                        data-bs-target="#sub_pastas" type="button" role="tab"
-                                        aria-controls="pills-contact" aria-selected="false">Pastas</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="btn_marinos" data-bs-toggle="pill"
-                                        data-bs-target="#sub_marinos" type="button" role="tab"
-                                        aria-controls="pills-contact" aria-selected="false">Marinos</button>
-                                </li>
-                            </ul>
-                        </div> -->
                         <ul class="nav nav-tabs">
                             <li class="nav-item">
                                 <a class="nav-link active" data-bs-toggle="pill" id="btn_todos_segundos"
@@ -297,32 +237,6 @@
             <div class="tab-pane fade" id="sub_bebidas" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
                 <!-- BARRA SUBCATEGORIAS BEBIDAS --->
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <!-- <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="nav nav-tabs " id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="btn_todos_bebidas" data-bs-toggle="pill"
-                                        data-bs-target="#" type="button" role="tab" aria-controls="pills-home"
-                                        aria-selected="true">Todos</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="btn_refrescos" data-bs-toggle="pill"
-                                        data-bs-target="#sub_refrescos" type="button" role="tab"
-                                        aria-controls="pills-profile" aria-selected="true">Refrescos</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="btn_gaseosas" data-bs-toggle="pill"
-                                        data-bs-target="#sub_gaseosas" type="button" role="tab"
-                                        aria-controls="pills-home" aria-selected="false">Gaseosas</button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> -->
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
                             <a class="nav-link active" data-bs-toggle="pill" id="btn_todos_bebidas" href="#">Todos</a>
@@ -345,57 +259,11 @@
             <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4 px-0 py-0 mx-3 my-3" id="platos">
 
             </div>
-            <!--
-            <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2">
-                <div class="col" id="ensalada">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Ensalada</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a
-                                natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Aguadito norteño</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a
-                                natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Torta de choclo</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a
-                                natural lead-in to additional content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pollo asado</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a
-                                natural lead-in to additional content.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
         </div>
 
-        <div class="container" id="busqueda_fallida">
+        <div class="container text-center" id="busqueda_fallida">
             <h3>
-                No se encontró el platillo
+                Lo sentimos, no tenemos ese platillo
             </h3>
         </div>
     </main>

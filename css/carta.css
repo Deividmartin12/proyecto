@@ -2,9 +2,24 @@
     background-color: rgb(37,37,37);
 }
 
-#navbarSupportedContent ul li::selection{
-    color: red;
+#navbarSupportedContent ul li button:last-child{
+    color:white;
 }
+
+#navbarSupportedContent .active{
+    background-color: red;
+}
+
+
+
+#myTabContent a{
+    color: black;
+}
+
+/* #myTabContent .nav-link:active{
+    color: red;
+} */
+
 
 .card{
     transition: all 0.5s ease;
@@ -37,6 +52,10 @@
    object-fit: cover;
 }
 
+.card a{
+    background-color: red;
+    border: none;
+}
 
 .card img:hover{
     transition: all 0.5s;
@@ -79,20 +98,28 @@
     background-color: transparent;
     border: none;
     outline: none;
+    margin-left: 13px;
+    margin-right: 4px;
+    width: 225px;
 }
 
 #buscador_form{
     background-color: white;
-    padding: 1px;
+    padding: 4px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     border-radius: 20px;
-    width: 280px;
+    width: 290px;
 }
 
 #buscador_form img{
     height: 25px;
     margin-right: 10px;
+}
+
+#boton_contenedor_categorias{
+    border-color: gray;
+    background-color: rgb(70,70,70);
 }
 
