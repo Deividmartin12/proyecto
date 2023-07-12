@@ -1,21 +1,56 @@
 
-.bi-alarm{
-width: 40rem;
-}
 
-#fecha1{
-    width: 250px;
+.bi-alarm {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  
+  #fecha1 {
+    width: 50%;
     height: 4rem;
     border-radius: 2rem;
-    margin-left: 350px;
     text-align: center;
-}
-.salon{
-    align-items: center;
+  }
+  
+  .salon {
     text-align: center;
-    margin-left: 400px;
-}
+  }
+  
+  .btn-toolbar {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-group {
+    margin: 0.5rem;
+  }
+  
 
+@media (max-width: 767px) {
+    #fecha1 {
+      width: 100%;
+      max-width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .salon {
+      text-align: center;
+    }
+  
+    .btn-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .btn-group {
+      margin: 5px;
+    }
+  }
+
+  
+  
 footer {
     background-color: black;
     color: white;
