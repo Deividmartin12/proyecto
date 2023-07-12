@@ -1,3 +1,53 @@
+
+.containe {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#tables {
+  display: flex;
+  
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 0%;
+  height: 5rem;
+  border: 1px solid black;
+  margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+
+.selected {
+  background-color: green;
+}
+
+.saved {
+  background-color: red;
+}
+
+#message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+
+
 form{
     align-items: center;
     text-align: center;
