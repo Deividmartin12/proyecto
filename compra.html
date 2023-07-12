@@ -16,9 +16,9 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 ">
-        <div class="container-fluid" style="background-image: url(../img/fondo_header.png); background-size: 1500px;">
+        <div class="container-fluid" style="background-image: url(img/fondo_header.png); background-size: 1500px;">
             <a class="navbar-brand" href="#">
-                <img class="img" src="../img/MLogoCabecera.png" alt="Muchick" height="60">
+                <img class="img" src="img/MLogoCabecera.png" alt="Muchick" height="60">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -43,19 +43,20 @@
                     </ul>
                 </div>
                 <a class="navbar-brand" href="#">
-                    <img class="img" src="../img/iconoUsuario_2.png" alt="Login" height="40">
-                    <img class="img" src="../img/carrito.png" alt="Carrito" height="40">
+                    <img class="img" src="img/iconoUsuario_2.png" alt="Login" height="40">
+                    <img class="img" src="img/carrito.png" alt="Carrito" height="40">
                 </a>
             </div>
 
         </div>
     </nav>
+    
     <div class="pagopedido">
         <div>
             <h1>PAGO PEDIDO</h1>
         </div>
-        <div class="datosBotones">
-            <h2 class="sub-pago">Datos</h2>
+        <h2 class="sub-pago">Datos</h2>
+        <div class="datosBotones m-0">
             <div class="botonesDatos text-center flex-colum">
                 <a class="btn btn-primary w-30 d-inline-block col-md-3 col-sm-11 mb-1 mb-md-0" href="#"
                     role="button">Apple</a>
@@ -97,10 +98,7 @@
                     <label for="floatingInput">Dirección</label>
                 </div>
 
-                <div class="w-100"></div>
-                <div class="d-grid gap-2">
-                    <button class="btn btn-primary" type="button">Button</button>
-                </div>
+
                 </from>
 
         </section>
@@ -114,31 +112,31 @@
                 </div>
                 <div class="" id="datos_pedido"></div>
             </div>
-            
+
         </div>
 
 
-        <div class="d-flex flex-sm-column flex-md-row gap-1 m-2">
+        <div class="d-flex flex-md-column flex-xl-row gap-1 m-2">
             <div class="metodoPago w-100 p-2">
                 <h2 class="">Elegir el método de pago</h2>
                 <form class="">
                     <fieldset class="d-flex gap-4">
-                        <div class="fs-4">
+                        <div class="fs-3">
                             <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="visa"
                                 checked>
                             <label class="form-check-label" for="visa">Visa</label>
                         </div>
-                        <div class="fs-4">
+                        <div class="fs-3">
                             <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
                                 id="MasterCard" checked>
                             <label class="form-check-label " for="MasterCard">MasterCard</label>
                         </div>
-                        <div class="fs-4">
+                        <div class="fs-3">
                             <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="yape"
                                 checked>
                             <label class="form-check-label" for="yape">Yape</label>
                         </div>
-                        <div class="fs-4">
+                        <div class="fs-3">
                             <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="Plin"
                                 checked>
                             <label class="form-check-label" for="Plin">Plin</label>
@@ -148,20 +146,18 @@
             </div>
             <div class="comprobante w-100 p-2">
                 <h2 class="text">Tipo comprobante</h2>
-                <form class="text">
+                <form class="">
                     <fieldset class="d-flex gap-4">
-                        <div class="fs-4">
+                        <div class="fs-3">
                             <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="Boleta"
                                 checked>
                             <label class="form-check-label" for="Boleta">Boleta</label>
                         </div>
-                        <div class="fs-4">
+                        <div class="fs-3">
                             <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
                                 id="Factura" checked>
                             <label class="form-check-label" for="Factura">Factura</label>
                         </div>
-
-
                     </fieldset>
                 </form>
             </div>
