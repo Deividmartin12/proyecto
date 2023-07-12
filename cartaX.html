@@ -44,58 +44,121 @@
 
     <main>
         <!-- BARRA CATEGORIAS -->
+        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <!-- BOTON RESPONSIVE -->
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- CONTENEDOR RESPONSIVO -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- LINKS NAV - TAB SUPERIOR -->
                     <ul class="nav nav-pills " id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            <button class="nav-link active" id="sub_entradas-tab" data-bs-toggle="pill"
                                 data-bs-target="#sub_entradas" type="button" role="tab" aria-controls="pills-home"
                                 aria-selected="true">ENTRADAS</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            <button class="nav-link" id="sub_segundos-tab" data-bs-toggle="pill"
                                 data-bs-target="#sub_segundos" type="button" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">SEGUNDOS</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            <button class="nav-link" id="sub_bebidas-tab" data-bs-toggle="pill"
                                 data-bs-target="#sub_bebidas" type="button" role="tab" aria-controls="pills-contact"
                                 aria-selected="false">BEBIDAS</button>
                         </li>
                     </ul>
                 </div>
+                <!-- BUSCADOR -->
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2" type="search" placeholder="Plato" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
         </nav>
 
+
+
+
         <!-- BARRA SUBCATEGORIAS -->
-        <!-- SUBCATEGORÍAS - ENTRADAS -->
+        <!-- CONTENEDOR DEL TAB SUPERIOR -->
         <div class="tab-content" id="myTabContent">
+            <!-- ITEM DEL TAP SUPERIOR -->
             <div class="tab-pane fade show active" id="sub_entradas" role="tabpanel" aria-labelledby="home-tab"
                 tabindex="0">
+                <!-- BARRA SUBCATEGORIAS ENTRADAS - TAB INFERIOR-->
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
-                            <ul class="nav nav-tabs " id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                        aria-selected="true">Clásicas</button>
-                                </li>
-                            </ul>
+                        <ul class="nav nav-tabs " id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="clasicas-tab" data-bs-toggle="pill"
+                                    data-bs-target="#sub_clasicas" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Clásicas</button>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
+                <!-- FIN BARRA SUBCATEGORIAS ENTRADAS - TAB INFERIOR-->
+
+                <!-- CONTENIDO DEL TAP INFERIOR -->
+                <div class="tab-content" id="nav-tabContent">
+                    <!-- ITEM DEL TAP INFERIOR -->
+                    <div class="tab-pane fade show active" id="sub_clasicas" role="tabpanel"
+                        aria-labelledby="nav-home-tab" tabindex="0">
+                        <!-- LISTA DE PLATOS - CLASICAS -->
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ensalada</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Aguadito norteño</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Torta de choclo</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN LISTA DE PLATOS - CLASICAS -->
+                    </div>
+                    <!-- FIN ITEM DEL TAP INFERIOR -->
+                </div>
+                <!-- FIN CONTENIDO DEL TAP INFERIOR -->
             </div>
-            <!-- SUBCATEGORÍAS - SEGUNDOS -->
+            <!-- FIN ITEM DEL TAP SUPERIOR -->
+
+
+
+
+            <!-- ITEM DEL TAP SUPERIOR -->
             <div class="tab-pane fade" id="sub_segundos" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <!-- BARRA SUBCATEGORIAS SEGUNDOS - TAB INFERIOR-->
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -107,31 +170,281 @@
                             <ul class="nav nav-tabs " id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                        data-bs-target="#" type="button" role="tab" aria-controls="pills-home"
-                                        aria-selected="true">Arroces y Carnes</button>
+                                        data-bs-target="#sub_arroces_y_carnes" type="button" role="tab"
+                                        aria-controls="pills-home" aria-selected="true">Arroces y Carnes</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                        data-bs-target="#" type="button" role="tab" aria-controls="pills-profile"
-                                        aria-selected="false">Fritos</button>
+                                        data-bs-target="#sub_fritos" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Fritos</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                        data-bs-target="#" type="button" role="tab" aria-controls="pills-contact"
-                                        aria-selected="false">Pastas</button>
+                                        data-bs-target="#sub_pastas" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Pastas</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                        data-bs-target="#" type="button" role="tab" aria-controls="pills-contact"
-                                        aria-selected="false">Marinos</button>
+                                        data-bs-target="#sub_marinos" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Marinos</button>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
+                <!-- FIN BARRA SUBCATEGORIAS SEGUNDOS - TAB INFERIOR-->
+
+                <!-- CONTENIDO DEL TAP INFERIOR -->
+                <div class="tab-content" id="nav-tabContent">
+                    <!-- ITEM DEL TAP INFERIOR -->
+                    <div class="tab-pane fade show active" id="sub_arroces_y_carnes" role="tabpanel"
+                        aria-labelledby="nav-home-tab" tabindex="0">
+                        <!-- LISTA DE PLATOS - ARROCES Y CARNES -->
+                        <div class="row row-cols-1 row-cols-md-4 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pollo saltado</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lomo saltado</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Arroz chaufa</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Seco de cabrito</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cecina saltada</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN LISTA DE PLATOS - ARROCES Y CARNES -->
+                    </div>
+                    <!-- FIN ITEM DEL TAP INFERIOR -->
+
+                    <!-- ITEM DEL TAP INFERIOR -->
+                    <div class="tab-pane fade" id="sub_fritos" role="tabpanel" aria-labelledby="nav-profile-tab"
+                        tabindex="0">
+                        <!-- LISTA DE PLATOS - FRITOS -->
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Broaster</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mostrito</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Salchipapa</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hamburguesa de pollo</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hamburguesa de carne</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN LISTA DE PLATOS - FRITOS -->
+                    </div>
+                    <!-- FIN ITEM DEL TAP INFERIOR -->
+
+                    <!-- ITEM DEL TAP INFERIOR -->
+                    <div class="tab-pane fade" id="sub_pastas" role="tabpanel" aria-labelledby="nav-contact-tab"
+                        tabindex="0">
+                        <!-- LISTA DE PLATOS - PASTAS -->
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tallarín saltado</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tallarines verdes</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tallarines a la huancaína</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN LISTA DE PLATOS - PASTAS -->
+                    </div>
+                    <!-- FIN ITEM DEL TAP INFERIOR -->
+
+                    <!-- ITEM DEL TAP INFERIOR -->
+                    <div class="tab-pane fade" id="sub_marinos" role="tabpanel" aria-labelledby="nav-disabled-tab"
+                        tabindex="0">
+                        <!-- LISTA DE PLATOS - MARINOS -->
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sudado</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ceviche</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Arroz con mariscos</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tortilla de raya</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicharron de pescado</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Parihuela</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN LISTA DE PLATOS - MARINOS -->
+                    </div>
+                    <!-- FIN ITEM DEL TAP INFERIOR -->
+                </div>
+                <!-- FIN CONTENIDO DEL TAP INFERIOR -->
             </div>
-            <!-- SUBCATEGORÍAS - BEBIDAS -->
+            <!-- FIN ITEM DEL TAP SUPERIOR -->
+
+
+
+
+
+            <!-- ITEM DEL TAP SUPERIOR -->
             <div class="tab-pane fade" id="sub_bebidas" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <!-- BARRA SUBCATEGORIAS BEBIDAS - TAB INFERIOR-->
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -142,21 +455,116 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="nav nav-tabs " id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                        data-bs-target="#" type="button" role="tab" aria-controls="pills-home"
-                                        aria-selected="true">Gaseosas</button>
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#sub_refrescos" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="true">Refrescos</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                        data-bs-target="#" type="button" role="tab" aria-controls="pills-profile"
-                                        aria-selected="false">Refrescos</button>
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#sub_gaseosas" type="button" role="tab"
+                                        aria-controls="pills-home" aria-selected="false">Gaseosas</button>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
+                <!-- BARRA SUBCATEGORIAS BEBIDAS - TAB INFERIOR-->
+
+                <!-- CONTENIDO DEL TAP INFERIOR -->
+                <div class="tab-content" id="nav-tabContent">
+                    <!-- ITEM DEL TAP INFERIOR -->
+                    <div class="tab-pane fade show active" id="sub_refrescos" role="tabpanel" aria-labelledby="nav-home-tab"
+                        tabindex="0">
+                        <!-- LISTA DE PLATOS - REFRESCOS -->
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicha de jora</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicha morada</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Limonada</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN LISTA DE PLATOS - REFRESCOS -->
+                    </div>
+                    <!-- FIN ITEM DEL TAP INFERIOR -->
+
+                    <!-- ITEM DEL TAP INFERIOR -->
+                    <div class="tab-pane fade" id="sub_gaseosas" role="tabpanel" aria-labelledby="nav-profile-tab"
+                        tabindex="0">
+                        <!-- LISTA DE PLATOS - GASEOSAS -->
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Coca Cola</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Inka Cola</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Salchipapa</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN LISTA DE PLATOS - GASEOSAS -->
+                    </div>
+                    <!-- FIN ITEM DEL TAP INFERIOR -->
+                </div>
+                <!-- FIN CONTENIDO DEL TAP INFERIOR -->
             </div>
+            <!-- FIN ITEM DEL TAP SUPERIOR -->
         </div>
+        <!-- FIN CONTENEDOR DEL TAP SUPERIOR -->
+
+
+
+
     </main>
 </body>
 
