@@ -1,3 +1,11 @@
+#barra_categorias{
+    background-color: rgb(37,37,37);
+}
+
+#navbarSupportedContent ul li::selection{
+    color: red;
+}
+
 .card{
     transition: all 0.5s ease;
     cursor: pointer;
@@ -65,6 +73,26 @@
 
 .navbar h2,.div,h1{
     display: flex;
-    
-    
 }
+
+#buscador_form input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#buscador_form{
+    background-color: white;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 280px;
+}
+
+#buscador_form img{
+    height: 25px;
+    margin-right: 10px;
+}
+

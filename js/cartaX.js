@@ -475,41 +475,11 @@ document.getElementById("buscador").addEventListener("keyup", function () {
 
     filtro_busqueda = menu.filter(function (a) {
         if (a.nombre.toUpperCase().includes(texto_ingresado.toUpperCase())) {
-
-            /* xx=a.nombre;
-
-            return xx; */
             document.getElementById(a.nombre).style.display="block";
         }else{
             document.getElementById(a.nombre).style.display="none";
         }
     });
 
-    console.log(filtro_busqueda);
-
-    /* for (let i = 0; i < menu.length; i++) {
-        const element = menu[i];
-
-        if (element.nombre == filtro_busqueda) {
-            document.getElementById(menu[i].nombre).style.display = "block";
-        } else {
-            document.getElementById(menu[i].nombre).style.display = "none";
-        }
-    } */
-
-
-
-    
-
-
-
-    /* if(this.nodeValue==""){
-        mostrar_platos(filtro_busqueda);
-    
-    }else if (filtro_busqueda==""){
-        document.querySelectorAll("card").innerHTML = "";
-    }else{
-        mostrar_platos.value[filtro_busqueda];
-    } */
 });
 
