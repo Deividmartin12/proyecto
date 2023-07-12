@@ -100,7 +100,7 @@ body {
 /*NAV*/
 
 /*FOOTER*/
-footer {
+footer{
   background-color: black;
   color: white;
   padding-top: 1.5%;
@@ -113,9 +113,7 @@ footer {
   justify-content: space-between;
 }
 
-.contact-info,
-.policies,
-.subscribe {
+.contact-info, .policies, .subscribe {
   flex: 1;
   margin: 5%;
   margin-top: 0%;
@@ -144,8 +142,7 @@ footer {
 }
 
 .footer-container ul li a {
-  color: white;
-  /* Color de enlace personalizado */
+  color: white; /* Color de enlace personalizado */
   text-decoration: none;
 }
 
@@ -173,10 +170,9 @@ input[type="text"] {
   background-color: #555;
 }
 
-#acepto {
+#acepto{
   float: left;
 }
-
 /*   */
 
 .reclamaciones {
@@ -192,28 +188,27 @@ input[type="text"] {
   display: block;
   margin: 0 auto;
   width: 50px;
-
+  
 }
 
 .container {
   display: flex;
   align-items: center;
-
+  
 }
 
 /*    */
-.abajo img,
-.footer_abajo {
+.abajo img, .footer_abajo{
   float: left;
   margin: 15px;
-
+  
 }
 
-#imagen-siguenos {
+#imagen-siguenos{
   float: right;
 }
 
-#izquierda {
+#izquierda{
   float: left;
   margin-top: 4%;
   padding: 0%;
@@ -226,16 +221,16 @@ input[type="text"] {
   background-color: black;
 }
 
-.suscribe input {
-  width: 15%;
-
+.suscribe input{
+  width: 15% ;
+  
 }
 
 @media (max-width: 767px) {
   .footer-container {
-    flex-direction: column;
-
-    padding: 0%;
+      flex-direction: column;
+      
+      padding: 0%;
   }
 }
 
@@ -246,12 +241,11 @@ hr {
   margin: 0;
 }
 
-.linea-roja {
+.linea-roja{
   margin: 0%;
-  color: rgb(255, 0, 0);
-  background-color: rgb(255, 0, 0);
+  color: rgb(255,0,0);
+  background-color: rgb(255,0,0);
   height: 15px;
 
 }
-
 /*FOOTER*/
