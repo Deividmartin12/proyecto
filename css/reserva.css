@@ -1,5 +1,12 @@
+#tiempo{
+    width: 5rem;
+    align-items: center;
+    text-align: center;
+}
 
-
+.container p{
+    text-align: justify;
+}
 .bi-alarm {
     max-width: 40rem;
     margin: 0 auto;
