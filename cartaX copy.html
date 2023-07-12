@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/carta.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 ">
+        <div class="container-fluid" style="background-image: url(../img/fondo_header.png); background-size: contain;">
+            <a class="navbar-brand" href="#">
+                <img class="img" src="../img/MLogoCabecera.png" alt="Muchick" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container-fluid d-flex justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-4">
+                            <a class="nav-link" href="#">¿QUIÉNES SOMOS?</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link" href="#">RESERVAR MESA</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link" href="#">DELIVERY</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link" href="#">CARTA</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand" href="#">
+                    <img class="img" src="../img/iconoUsuario_2.png" alt="Login" height="40">
+                    <img class="img" src="../img/carrito.png" alt="Carrito" height="40">
+                </a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- <nav class="nav_principal">
+        <div class="logo_cabecera">
+            <a href="/HTML/index.html">
+                <img src="../img/MLogoCabecera.png" alt="Logo Muchick" class="logo_cabecera">
+            </a>
+        </div>
+
+        <div class="links_cabecera">
+            <a href="">¿QUIÉNES SOMOS?</a>
+            <a href="">RESERVAR MESA</a>
+            <a href="">DELIVERY</a>
+            <a href="">CARTA</a>
+            <a href="">UBICACIÓN</a>
+        </div>
+
+        <div class="iconos_cabecera">
+            <a href="">
+                <img src="../img/iconoUsuario_2.png" alt="Icono Login">
+            </a>
+            <a href="">
+                <img src="../img/carrito.png" alt="Icono carrito">
+            </a>
+        </div>
+    </nav>
+    <div class="espacio_nav"></div> -->
+
+    <main>
+        <!-- BARRA CATEGORIAS -->
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <!-- BOTON RESPONSIVE -->
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- CONTENEDOR RESPONSIVO -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- LINKS NAV - TAB SUPERIOR -->
+                    <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="sub_entradas-tab" data-bs-toggle="pill"
+                                data-bs-target="#sub_entradas" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">ENTRADAS</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sub_segundos-tab" data-bs-toggle="pill"
+                                data-bs-target="#sub_segundos" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">SEGUNDOS</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sub_bebidas-tab" data-bs-toggle="pill"
+                                data-bs-target="#sub_bebidas" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">BEBIDAS</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- BUSCADOR -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="text" placeholder="Plato" aria-label="Search"
+                        id="buscador">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+
+
+
+
+        <!-- BARRA SUBCATEGORIAS -->
+        <!-- CONTENEDOR DEL TAB SUPERIOR -->
+        <div class="tab-content" id="myTabContent">
+            <!-- ITEM DEL TAP SUPERIOR -->
+            <div class="tab-pane fade show active" id="sub_entradas" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <!-- BARRA SUBCATEGORIAS ENTRADAS - TAB INFERIOR-->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <ul class="nav nav-tabs " id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="btn_clasicas" data-bs-toggle="pill"
+                                    data-bs-target="#sub_clasicas" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Clásicas</button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- FIN BARRA SUBCATEGORIAS ENTRADAS - TAB INFERIOR-->
+            </div>
+            <!-- FIN ITEM DEL TAP SUPERIOR -->
+
+
+
+
+            <!-- ITEM DEL TAP SUPERIOR -->
+            <div class="tab-pane fade" id="sub_segundos" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <!-- BARRA SUBCATEGORIAS SEGUNDOS - TAB INFERIOR-->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="nav nav-tabs " id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="btn_arroces_y_carnes" data-bs-toggle="pill"
+                                        data-bs-target="#sub_arroces_y_carnes" type="button" role="tab"
+                                        aria-controls="pills-home" aria-selected="true">Arroces y Carnes</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="btn_fritos" data-bs-toggle="pill"
+                                        data-bs-target="#sub_fritos" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Fritos</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="btn_pastas" data-bs-toggle="pill"
+                                        data-bs-target="#sub_pastas" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Pastas</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="btn_marinos" data-bs-toggle="pill"
+                                        data-bs-target="#sub_marinos" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Marinos</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- FIN BARRA SUBCATEGORIAS SEGUNDOS - TAB INFERIOR-->
+            </div>
+            <!-- FIN ITEM DEL TAP SUPERIOR -->
+
+
+
+
+
+            <!-- ITEM DEL TAP SUPERIOR -->
+            <div class="tab-pane fade" id="sub_bebidas" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <!-- BARRA SUBCATEGORIAS BEBIDAS - TAB INFERIOR-->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="nav nav-tabs " id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="btn_refrescos" data-bs-toggle="pill"
+                                        data-bs-target="#sub_refrescos" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="true">Refrescos</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="btn_gaseosas" data-bs-toggle="pill"
+                                        data-bs-target="#sub_gaseosas" type="button" role="tab"
+                                        aria-controls="pills-home" aria-selected="false">Gaseosas</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- BARRA SUBCATEGORIAS BEBIDAS - TAB INFERIOR-->
+            </div>
+            <!-- FIN ITEM DEL TAP SUPERIOR -->
+        </div>
+        <!-- FIN CONTENEDOR DEL TAP SUPERIOR -->
+
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2" id="platos">
+
+            </div>
+            <!--
+            <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2">
+                <div class="col" id="ensalada">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ensalada</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a
+                                natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Aguadito norteño</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a
+                                natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Torta de choclo</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a
+                                natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pollo asado</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a
+                                natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+
+        <div class="container" id="busqueda_fallida">
+            <h3>
+                No se encontró el platillo
+            </h3>
+        </div>
+    </main>
+
+</body>
+<script src="../js/cartaX.js"></script>
+
+</html>
