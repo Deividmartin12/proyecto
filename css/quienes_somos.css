@@ -1,9 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 
-img {
+.historia {
     width: 1450px;
     height: 700px;
     margin: 20px;
+}
+
+.mision {
+  width: 1450px;
+  height: 700px;
+  margin: 20px;
+}
+
+.vision {
+  width: 1450px;
+  height: 700px;
+  margin: 20px;
+}
+
+.ubicanos {
+  width: 1450px;
+  height: 700px;
+  margin: 20px;
 }
 
 .quienes-somos{
