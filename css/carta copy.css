@@ -5,7 +5,14 @@
 #navbarSupportedContent ul li button:last-child{
     color:white;
 }
-
+#imagen_navar{
+    transition: 0.5s;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  #imagen_navar:hover{
+    transform: scale(1.1);
+  }
 #navbarSupportedContent .active{
     background-color: red;
 }

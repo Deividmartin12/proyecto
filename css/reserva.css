@@ -1,5 +1,15 @@
+
 .navbar-nav a:active{
   color: red;
+}
+
+#imagen_navar{
+  transition: 0.5s;
+  object-fit: cover;
+  overflow: hidden;
+}
+#imagen_navar:hover{
+  transform: scale(1.1);
 }
 
 .m_ocu{
