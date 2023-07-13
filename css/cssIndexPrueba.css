@@ -494,13 +494,11 @@ input[type="text"] {
   display: block;
   margin: 0 auto;
   width: 50px;
-
 }
 
 .container {
   display: flex;
   align-items: center;
-
 }
 
 /*    */
@@ -530,13 +528,11 @@ input[type="text"] {
 
 .suscribe input {
   width: 15%;
-
 }
 
 @media (max-width: 767px) {
   .footer-container {
     flex-direction: column;
-
     padding: 0%;
   }
 }
