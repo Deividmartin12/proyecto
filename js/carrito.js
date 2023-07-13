@@ -1,4 +1,4 @@
-const botones_agregar_carrito = document.querySelectorAll("#agregar-carrito");
+const botones_agregar_carrito = document.querySelectorAll("#agregar_carrito");
 
 
 botones_agregar_carrito.forEach(boton => {
