@@ -2,6 +2,15 @@
   background-color: #f9cece;
 }
 
+#imagen_navar{
+  transition: 0.5s;
+  object-fit: cover;
+  overflow: hidden;
+}
+#imagen_navar:hover{
+  transform: scale(1.1);
+}
+
 .divprincimain {
   background-color: #f9cece3b;
 }

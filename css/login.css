@@ -12,6 +12,15 @@ body {
 * {
     box-sizing: border-box;
 }
+
+#imagen_navar{
+    transition: 0.5s;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  #imagen_navar:hover{
+    transform: scale(1.1);
+  }
 .contenedor{
     width: 100%;
     padding: 15px;
