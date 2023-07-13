@@ -1,10 +1,3 @@
-$("#cuenta").hover(function () {
-    $(".enlaces").velocity("callout.shake");
-  });
-
-  
-
-
 
 
 let selectedTable = null;
