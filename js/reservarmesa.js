@@ -1,56 +1,55 @@
-// Array para almacenar las mesas seleccionadas
-let selectedTables = [];
+let selectedTable = null;
 
-// Función para alternar la selección de una mesa
-function toggleSelection(event) {
+function selectTable(event) {
   const table = event.target;
   const tableId = parseInt(table.dataset.id);
-  const index = selectedTables.indexOf(tableId);
 
-  if (index === -1) {
-    // Si la mesa no está seleccionada, la agregamos al array
-    selectedTables.push(tableId);
+  if (selectedTable === null) {
     table.classList.add('selected');
+    selectedTable = tableId;
   } else {
-    // Si la mesa ya está seleccionada, la eliminamos del array
-    selectedTables.splice(index, 1);
-    table.classList.remove('selected');
+    const previousTable = document.querySelector(`.table[data-id="${selectedTable}"]`);
+    previousTable.classList.remove('selected');
+
+    if (selectedTable === tableId) {
+      selectedTable = null;
+    } else {
+      table.classList.add('selected');
+      selectedTable = tableId;
+    }
   }
 }
 
-// Función para quitar la selección de todas las mesas
 function clearSelection() {
   const tables = document.getElementsByClassName('table');
   for (let table of tables) {
     table.classList.remove('selected');
   }
-  selectedTables = [];
-  localStorage.removeItem('selectedTables');
+  selectedTable = null;
+  localStorage.removeItem('selectedTable');
   showMessage('Selección eliminada.', 'success');
 }
 
-// Función para reiniciar todas las mesas a un estado inicial
 function resetTables() {
   const tables = document.getElementsByClassName('table');
   for (let table of tables) {
     table.classList.remove('selected');
     table.classList.remove('saved');
   }
-  selectedTables = [];
-  localStorage.removeItem('selectedTables');
+  selectedTable = null;
+  localStorage.removeItem('selectedTable');
   showMessage('Mesas reiniciadas.', 'success');
 }
 
-// Función para guardar la selección en el localStorage y resaltar las mesas guardadas
 function saveSelection() {
-  if (selectedTables.length > 0) {
-    localStorage.setItem('selectedTables', JSON.stringify(selectedTables));
+  if (selectedTable !== null) {
+    localStorage.setItem('selectedTable', selectedTable);
     showMessage('Selección guardada correctamente.', 'success');
 
     const tables = document.getElementsByClassName('table');
     for (let table of tables) {
       const tableId = parseInt(table.dataset.id);
-      if (selectedTables.includes(tableId)) {
+      if (tableId === selectedTable) {
         table.classList.add('saved');
       } else {
         table.classList.remove('saved');
@@ -61,46 +60,35 @@ function saveSelection() {
   }
 }
 
-// Función para cargar la selección almacenada en el localStorage
 function loadSelection() {
-  const storedSelection = localStorage.getItem('selectedTables');
+  const storedSelection = localStorage.getItem('selectedTable');
   if (storedSelection) {
-    selectedTables = JSON.parse(storedSelection);
-    const tables = document.getElementsByClassName('table');
-    for (let table of tables) {
-      const tableId = parseInt(table.dataset.id);
-      if (selectedTables.includes(tableId)) {
-        table.classList.add('selected');
-        table.classList.add('saved');
-      }
+    selectedTable = parseInt(storedSelection);
+    const table = document.querySelector(`.table[data-id="${selectedTable}"]`);
+    if (table) {
+      table.classList.add('selected');
     }
   }
 }
 
-// Función para mostrar mensajes
 function showMessage(message, type) {
   const messageContainer = document.getElementById('message');
   messageContainer.textContent = message;
   messageContainer.className = type;
 }
 
-// Cargar la selección al cargar la página
 loadSelection();
 
-// Agregar evento de clic a las mesas
 const tables = document.getElementsByClassName('table');
 for (let table of tables) {
-  table.addEventListener('click', toggleSelection);
+  table.addEventListener('click', selectTable);
 }
 
-// Agregar evento de clic al botón de guardar
 const saveButton = document.getElementById('saveBtn');
 saveButton.addEventListener('click', saveSelection);
 
-// Agregar evento de clic al botón de quitar selección
 const clearButton = document.getElementById('clearBtn');
 clearButton.addEventListener('click', clearSelection);
 
-// Agregar evento de clic al botón de reiniciar mesas
 const resetButton = document.getElementById('resetBtn');
 resetButton.addEventListener('click', resetTables);
