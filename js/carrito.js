@@ -3,6 +3,7 @@ const ordenar = document.querySelectorAll(".ordenar_carrito");
 document.addEventListener("DOMContentLoaded", () => {
   show_carrito();
 });
+
 ordenar.forEach((boton) => {
   boton.addEventListener("click", () => {
     const title = boton.parentElement.querySelector(".card-title").textContent;
