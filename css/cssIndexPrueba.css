@@ -553,3 +553,11 @@ hr {
 .navbar-nav a:active{
   color: red;
 }
+#apple, #google, #facebook{
+  background-color: #fefce0;
+  border: #fef8a0;
+  color: black;
+}
+.form-control{
+  background-color: #fefce0 !important;
+}
