@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
-
 .historia {
   width: 1450px;
   height: 700px;
@@ -183,3 +181,10 @@ nav {
   padding-inline: 15px;
 }
 /*NAV*/
+
+.linea-roja {
+  margin: 0%;
+  color: rgb(255, 0, 0);
+  background-color: rgb(255, 0, 0);
+  height: 15px;
+}
