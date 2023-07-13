@@ -421,10 +421,8 @@ document.getElementById("buscador").addEventListener("keyup", function () {
     filtro_busqueda = menu.filter(function (a) {
         if (a.nombre.toUpperCase().includes(texto_ingresado.toUpperCase())) {
             document.getElementById(a.nombre).style.display = "block";
-            document.getElementById("busqueda_fallida").style.display = "none";
         } else {
             document.getElementById(a.nombre).style.display = "none";
-            document.getElementById("busqueda_fallida").style.display = "block";
         }
     });
 

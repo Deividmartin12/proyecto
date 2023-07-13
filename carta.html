@@ -11,14 +11,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/carta.css">
-
+    <link rel="stylesheet" href="css/carta.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 ">
         <div class="container-fluid" style="background-image: url(../img/fondo_header.png); background-size: 1500px;">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img class="img" src="img/MLogoCabecera.png" alt="Muchick" height="60">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav_responsivo"
@@ -29,16 +28,16 @@
                 <div class="container-fluid d-flex justify-content-center">
                     <ul class="navbar-nav">
                         <li class="nav-item px-4">
-                            <a class="nav-link" href="#">¿QUIÉNES SOMOS?</a>
+                            <a class="nav-link" href="quienesSomos.html">¿QUIÉNES SOMOS?</a>
                         </li>
                         <li class="nav-item px-4">
-                            <a class="nav-link" href="#">RESERVAR MESA</a>
+                            <a class="nav-link" href="reservaMesa.html">RESERVAR MESA</a>
                         </li>
                         <li class="nav-item px-4">
-                            <a class="nav-link" href="#">DELIVERY</a>
+                            <a class="nav-link" href="delivery.html">DELIVERY</a>
                         </li>
                         <li class="nav-item px-4">
-                            <a class="nav-link" href="#">CARTA</a>
+                            <a class="nav-link" href="carta.html">CARTA</a>
                         </li>
                     </ul>
                 </div>
@@ -52,75 +51,34 @@
             </div>
         </div>
     </nav>
-
-
-        <div class="container-fluid">
-            <div id="bebidas_subcategorias">
-                <ul class="nav nav-justified">
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="mostrar_bebidas('refrescos');" href="#">Refrescos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="mostrar_bebidas('gaseosas');" href="#">Gaseosas</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="container-fluid" id="entradas_platos">
-            <div class="row row-cols-1 row-cols-md-4 g-4" id="clasicas">
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Ensalada</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
+    <!-- Modal Carrito-->
+    <div class="modal fade" id="modal_carrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">AGREGAR AL CARRITO</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Aguadito Norteño</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
+                <div class="modal-body">
+                    ...
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Torta de choclo</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="agregar_carrito">Agregar</button>
                 </div>
             </div>
         </div>
-
-        <div class="container-fluid" id="segundos_platos">
-            <div class="row row-cols-1 row-cols-md-4 g-4" id="arroces_y_carnes">
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pollo saltado</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Lomo saltado</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
+    </div>
+    <!-- Modal Imagen-->
+    <div class="modal fade" id="modal_imagen" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered active">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel2">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
                 </div>
                 <div class="modal-footer justify-content-center">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -130,7 +88,6 @@
             </div>
         </div>
     </div>
-
     <!-- CARRITO - NAV VERTICAL -->
     <div class="container-fluid">
         <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoY" aria-labelledby="offcanvasNavbarLabel">
@@ -152,8 +109,6 @@
             </div>
         </div>
     </div>
-
-
     <main>
         <!-- BARRA CATEGORIAS -->
         <!-- NAVBAR -->
@@ -185,7 +140,6 @@
                                 aria-selected="false">BEBIDAS</button>
                         </li>
                     </ul>
-
                 </div>
                 <!-- BUSCADOR -->
                 <form class="d-flex" role="search" id="buscador_form">
@@ -193,6 +147,7 @@
                     <img src="img/buscar_icono.png" alt="lupa">
                 </form>
             </div>
+        </nav>
         <!-- BARRA SUBCATEGORIAS -->
         <!-- CONTENEDOR DEL TAB SUPERIOR -->
         <div class="tab-content" id="myTabContent">
@@ -202,18 +157,6 @@
                 <!-- BARRA SUBCATEGORIAS ENTRADAS -->
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
-                        <!-- <ul class="nav nav-tabs " id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="btn_todos_entradas" data-bs-toggle="pill"
-                                    data-bs-target="#" type="button" role="tab" aria-controls="pills-home"
-                                    aria-selected="true">Todos</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="btn_clasicas" data-bs-toggle="pill"
-                                    data-bs-target="#sub_clasicas" type="button" role="tab" aria-controls="pills-home"
-                                    aria-selected="true">Clásicas</button>
-                            </li>
-                        </ul> -->
                         <ul class="nav nav-tabs">
                             <li class="nav-item">
                                 <a class="nav-link active" data-bs-toggle="pill" id="btn_todos_entradas"
@@ -228,15 +171,12 @@
                 <!-- FIN BARRA SUBCATEGORIAS ENTRADAS - TAB INFERIOR-->
             </div>
             <!-- FIN ITEM DEL TAP SUPERIOR -->
-
-
-
-
             <!-- ITEM DEL TAP SUPERIOR -->
             <div class="tab-pane fade" id="sub_segundos" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                 <!-- BARRA SUBCATEGORIAS SEGUNDOS -->
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
+
                         <ul class="nav nav-tabs">
                             <li class="nav-item">
                                 <a class="nav-link active" data-bs-toggle="pill" id="btn_todos_segundos"
@@ -262,10 +202,6 @@
             </div>
             <!-- FIN ITEM DEL TAP SUPERIOR -->
 
-
-
-
-
             <!-- ITEM DEL TAP SUPERIOR -->
             <div class="tab-pane fade" id="sub_bebidas" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
                 <!-- BARRA SUBCATEGORIAS BEBIDAS --->
@@ -287,16 +223,13 @@
             <!-- FIN ITEM DEL TAP SUPERIOR -->
         </div>
         <!-- FIN CONTENEDOR DEL TAP SUPERIOR -->
-
         <div class="container-fluid">
-            <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4 px-0 py-0 mx-3 my-3" id="platos">
+            <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-3 mx-3 my-3" id="platos">
 
             </div>
         </div>
-
-
-</html>
+    </main>
 </body>
-<script src="../js/carta.js"></script>
+<script src="js/carta.js"></script>
 
 </html>
