@@ -203,7 +203,7 @@ let menu = [
     },
     {
         id: 23,
-        src: "img/coca_cola.jpg",
+        src: "https://www.distribuidorabebidas.com.uy/wp-content/uploads/sites/31/2018/05/Coca-Cola-litro-descartable.jpg",
         nombre: "Coca Cola",
         categoria: categorias[2],
         subcategoria: subcategorias[5],
@@ -211,7 +211,7 @@ let menu = [
     },
     {
         id: 24,
-        src: "img/secodecabrito.jpg",
+        src: "https://inkachickenokinawa.com/wp-content/uploads/2017/12/inka-cola-1.5.png",
         nombre: "Inka Cola",
         categoria: categorias[2],
         subcategoria: subcategorias[5],
@@ -219,7 +219,7 @@ let menu = [
     },
     {
         id: 25,
-        src: "img/secodecabrito.jpg",
+        src: "https://comidasperuanas.net.pe/wp-content/uploads/2022/09/BR0WDxdCcAAZSO8-751x1024.png",
         nombre: "Chicha de Jora",
         categoria: categorias[2],
         subcategoria: subcategorias[6],
@@ -227,7 +227,7 @@ let menu = [
     },
     {
         id: 26,
-        src: "img/secodecabrito.jpg",
+        src: "https://www.lovferments.com/wp-content/uploads/2021/04/beb_chicha.jpg",
         nombre: "Chicha Morada",
         categoria: categorias[2],
         subcategoria: subcategorias[6],
