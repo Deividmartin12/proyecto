@@ -23,13 +23,29 @@
 label {
     margin-right: 10px;
     text-align: right;
-    width: 400px; /* Ajusta el ancho del label según tus necesidades */
+    width: 300px; /* Ajusta el ancho del label según tus necesidades */
 }
 
-.medium-input {
-    width: 200px; /* Tamaño fijo para input mediano */
+.file-input-container {
+    display: flex;
+    flex-direction: column;
 }
 
+.file-info {
+    font-size: 12px;
+    color: gray;
+}
+
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background:  #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
   
 body {
