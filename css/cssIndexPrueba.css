@@ -273,11 +273,9 @@ footer div>p {
   margin-block-end: 2%;
 }
 
-ul li a:hover {
-  padding: 5px;
-  background-color: white;
-  color: black;
-  border-radius: 15px;
+
+.navbar-nav a:active{
+  color: red;
 }
 
 .active {
