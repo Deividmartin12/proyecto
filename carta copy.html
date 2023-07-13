@@ -26,7 +26,7 @@
             </button>
             <div class="collapse navbar-collapse" id="nav_responsivo">
                 <div class="container-fluid d-flex justify-content-center">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav nav-underline">
                         <li class="nav-item px-4">
                             <a class="nav-link" href="quienesSomos.html">¿QUIÉNES SOMOS?</a>
                         </li>
@@ -70,24 +70,25 @@
         </div>
     </div>
     <!-- Modal Imagen-->
-    <div class="modal fade" id="modal_imagen" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <!-- <div class="modal fade" id="modal_imagen" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered active">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel2">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel2" id="modal_nombre_plato">Nombre del plato</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    ...
+                <div class="modal-body" id="modal_imagen_plato">
+                    Imagen del plato
+                    
                 </div>
                 <div class="modal-footer justify-content-center">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#modal_carrito">Añadir al carrito</button>
+                        data-bs-target="#modal_carrito" id="modal_añadir_plato">Añadir al carrito</button>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- CARRITO - NAV VERTICAL -->
     <div class="container-fluid">
         <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoY" aria-labelledby="offcanvasNavbarLabel">
@@ -230,6 +231,6 @@
         </div>
     </main>
 </body>
-<script src="js/carta.js"></script>
+<script src="js/carta copy.js.js"></script>
 
 </html>
