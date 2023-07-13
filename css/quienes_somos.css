@@ -1,3 +1,15 @@
+.navbar-nav a:active{
+  color: red;
+}
+#imagen_navar{
+  transition: 0.5s;
+  object-fit: cover;
+  overflow: hidden;
+}
+#imagen_navar:hover{
+  transform: scale(1.1);
+}
+
 .historia {
   width: 1450px;
   height: 700px;
@@ -56,11 +68,13 @@
 
 .quienes-somos {
   margin: 20px;
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: 0;
+  font-size:50px;
 }
 
 #titulos {

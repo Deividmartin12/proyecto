@@ -1,3 +1,17 @@
+
+.navbar-nav a:active{
+    color: red;
+}
+
+#imagen_navar{
+    transition: 0.5s;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  #imagen_navar:hover{
+    transform: scale(1.1);
+  }
+
 #barra_categorias{
     background-color: rgb(37,37,37);
 }
@@ -9,8 +23,6 @@
 #navbarSupportedContent .active{
     background-color: red;
 }
-
-
 
 #myTabContent .nav-link:active{
     /* color: red; */
