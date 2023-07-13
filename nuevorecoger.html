@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
+    </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 ">
@@ -60,21 +60,20 @@
     <div class="divprincimain" style="display: flex;">
         <h1 class="delivery-heading" style="margin-left: 40px;">Delivery</h1>
     </div>
+    
     <div class="divprincimain" style="display: flex; justify-content: center;">
         <form class="formulario" style="margin-bottom: 40px; margin-top: 10px; width: 900px;">
 
             <h2>COMO DESEAS RECIBIR TUS PEDIDOS</h2>
             <div class="contenedor">
 
-                <div style="display: flex; justify-content: space-between;">
-                    <input src="delivery.html" type="submit" value="Enviar por delvery" class="button"
-                        style="margin-left: 40px; margin-bottom: 20px;">
-                    <input src="nuevorecoger.html" type="submit" value="Recoger en tienda" class="button button-white"
-                        style="margin-left: 40px; margin-right: 40px; margin-bottom: 20px">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 20px">
+                    <a href="nuevodelivery.html" class="button" style="margin-left: 40px; margin-bottom: 20px; margin-right: 20px; text-align: center;">Enviar por delivery</a>
+                    <a href="nuevorecoger.html" class="button button-white" style="margin-right: 40px; margin-left: 20px; margin-bottom: 20px; text-align: center;">Recoger en tienda</a>
                 </div>
 
                 <div class="input-contenedor">
-                    <input type="password" placeholder="Ej. Francisco Bolognesi #270">
+                    <input type="text" placeholder="Ej. Francisco Bolognesi #270">
                 </div>
                 <p id="pdirec">¿No encuentras tu direccion? Mueve el cursor y ubica la dirección</p>
 
@@ -83,17 +82,14 @@
                     <input type="checkbox" id="myCheckbox">
                     <label for="myCheckbox">Usar mi direccion</label>
                 </div>
-
+                
                 <div style="width: 100%; margin-top: 20px; margin-bottom: 20px;">
                     <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3792.266355090837!2d-79.86812534511834!3d-6.927086081320237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ce38b044583e5%3A0xd150c3ecc5ea7d36!2sRestaurante%20Puerto%20Tiburon!5e0!3m2!1ses-419!2spe!4v1689201139235!5m2!1ses-419!2spe" 
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            
-                    <input class="buttonIngre" type="submit" value="Enviar" class="button button-white"
-                        style="margin-left: 40px; margin-right: 40px; margin-bottom: 20px ;">                
-                
+                 
 
             </div>
         </form>
