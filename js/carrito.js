@@ -1,29 +1,22 @@
-const botones_agregar_carrito = document.querySelectorAll("#agregar_carrito");
+const ordenar = document.querySelectorAll(".ordenar_carrito");
 
+ordenar.forEach((boton) => {
+  boton.addEventListener("click", () => {
+    const title = boton.parentElement.querySelector(".card-title").textContent;
+    const src = boton.parentElement.parentElement.querySelector("img").src;
+    let precio = boton.parentElement.querySelector(".card-text").textContent;
+    precio = parseInt(precio.split("/.")[1]);
 
-botones_agregar_carrito.forEach(boton => {
-    boton.addEventListener('click', () => {
-        const title = boton.parentElement.querySelector(".card-title").textContent;
-        const descripcion = boton.parentElement.querySelector(".card-text").textContent;
-        const src = boton.parentElement.parentElement.querySelector("img").src
-        
-        const precio = parseInt(boton.parentElement.querySelector(".precio").textContent);
-
-        agregar_local_storage(title,descripcion,src,precio);
-    })
-    
-});
-
-function agregar_local_storage(title, descripcion,src, precio) {
-
-    const id = localStorage.length + 1;
-
-    const obj = {
+    const boton_agregar = document.querySelector("#agregar_carrito");
+    boton_agregar.onclick = () => {
+      const id = localStorage.length + 1;
+      const obj = {
         title,
-        descripcion,
         src,
-        precio
-    }
-    localStorage.setItem(id,JSON.stringify(obj));
-    alert("Agregado correctamente");
-}
+        precio,
+      };
+      localStorage.setItem(id, JSON.stringify(obj));
+      alert("Agregado correctamente");
+    };
+  });
+});

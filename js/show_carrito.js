@@ -9,9 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
         total += producto.precio;
         show_producto(producto);
     }
+
+    const linea = document.createElement("HR");
     const total_etiqueta = document.createElement("P");
     total_etiqueta.classList.add("text-end", "p-3", "fw-bold", "fs-5")
-    total_etiqueta.textContent = "El precio total es: " + total;
+    total_etiqueta.textContent = "Total: " + total;
+    datos_pedido.appendChild(linea)
     datos_pedido.appendChild(total_etiqueta)
 })
 
@@ -28,6 +31,9 @@ function show_producto(producto, total) {
     const h5 = document.createElement("H5");
     const p = document.createElement("P");
     const precio_etiqueta = document.createElement("P");
+
+    h5.classList.add("text-left", "w-50");
+    precio_etiqueta.classList.add("text-center", "w-50");
 
     p.textContent = descripcion;
     h5.textContent = title;
@@ -50,9 +56,9 @@ function mostrar_fin() {
         e.preventDefault();
         const nombre = document.querySelector("#nombre").value;
         const apellido = document.querySelector("#apellido").value;
-        
-        swal('Pago exitos', nombre+" "+apellido, 'success');
-        
+
+        swal('Pago exitos', nombre + " " + apellido, 'success');
+
         localStorage.clear();
 
         setTimeout(() => {
