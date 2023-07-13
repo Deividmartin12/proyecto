@@ -1,5 +1,3 @@
-
-
 let id_entradas = document.getElementById("entradas-tab");
 let id_segundos = document.getElementById("segundos-tab");
 let id_bebidas = document.getElementById("bebidas-tab");
@@ -17,12 +15,19 @@ let id_refrescos = document.getElementById("btn_refrescos");
 
 let btn_agregar_carrito = document.getElementById("agregar_Carrito");
 
-let categorias = ['entradas', 'segundos', 'bebidas'];
+let categorias = ["entradas", "segundos", "bebidas"];
 
-let subcategorias = ['clasicas', 'arroces_y_carnes', 'fritos', 'pastas', 'marinos', 'gaseosas', 'refrescos'];
+let subcategorias = [
+    "clasicas",
+    "arroces_y_carnes",
+    "fritos",
+    "pastas",
+    "marinos",
+    "gaseosas",
+    "refrescos",
+];
 
 var filtro_busqueda = [];
-
 
 let menu = [
     {
@@ -71,7 +76,7 @@ let menu = [
         nombre: "Arroz chaufa",
         categoria: categorias[1],
         subcategoria: subcategorias[1],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 7,
@@ -302,12 +307,10 @@ let menu = [
 mostrar_platos(menu);
 
 function mostrar_platos(lista) {
-
     // document.getElementById("card").innerHTML = "";
 
     for (var i = 0; i < lista.length; i++) {
-
-        document.getElementById('platos').innerHTML += `
+        document.getElementById("platos").innerHTML += `
         <div class="col" id="${lista[i].nombre}">
                     <div class="card" data-bs-toggle="modal" data-bs-target="#modal_imagen">
                         <img  
@@ -316,18 +319,14 @@ function mostrar_platos(lista) {
                             <h5 class="card-title">${lista[i].nombre}</h5>
                             <p class="card-text"> S/. ${lista[i].precio}
                             </p>
-                            <a href="#" class="btn btn-primary px-5" data-bs-toggle="modal" 
+                            <a href="#" class="btn btn-primary px-5 ordenar_carrito" data-bs-toggle="modal" 
                             id="${lista[i].id}" data-bs-target="#modal_carrito" >Ordenar</a>
                         </div>
                     </div>
                 </div>
-        `
-
+        `;
     }
 }
-
-
-
 
 document.getElementById("btn_clasicas").addEventListener("click", () => {
     for (var i = 0; i < menu.length; i++) {
@@ -335,25 +334,27 @@ document.getElementById("btn_clasicas").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "clasicas") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
 
-document.getElementById("btn_arroces_y_carnes").addEventListener("click", () => {
-    for (var i = 0; i < menu.length; i++) {
-        const ca = menu[i].subcategoria;
-        const nom = menu[i].nombre;
+document
+    .getElementById("btn_arroces_y_carnes")
+    .addEventListener("click", () => {
+        for (var i = 0; i < menu.length; i++) {
+            const ca = menu[i].subcategoria;
+            const nom = menu[i].nombre;
 
-        if (ca == "arroces_y_carnes") {
-            document.getElementById(nom).style.display = 'block';
-        } else {
-            document.getElementById(nom).style.display = 'none';
+            if (ca == "arroces_y_carnes") {
+                document.getElementById(nom).style.display = "block";
+            } else {
+                document.getElementById(nom).style.display = "none";
+            }
         }
-    }
-});
+    });
 
 document.getElementById("btn_fritos").addEventListener("click", () => {
     for (var i = 0; i < menu.length; i++) {
@@ -361,9 +362,9 @@ document.getElementById("btn_fritos").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "fritos") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
@@ -373,9 +374,9 @@ document.getElementById("btn_pastas").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "pastas") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
@@ -385,9 +386,9 @@ document.getElementById("btn_marinos").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "marinos") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
@@ -397,9 +398,9 @@ document.getElementById("btn_gaseosas").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "gaseosas") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
@@ -409,9 +410,9 @@ document.getElementById("btn_refrescos").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "refrescos") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
@@ -421,9 +422,9 @@ document.getElementById("btn_todos_entradas").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "clasicas") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
@@ -432,10 +433,15 @@ document.getElementById("btn_todos_segundos").addEventListener("click", () => {
         const ca = menu[i].subcategoria;
         const nom = menu[i].nombre;
 
-        if (ca == "arroces_y_carnes" || ca == "fritos" || ca == "pastas" || ca == "marinos") {
-            document.getElementById(nom).style.display = 'block';
+        if (
+            ca == "arroces_y_carnes" ||
+            ca == "fritos" ||
+            ca == "pastas" ||
+            ca == "marinos"
+        ) {
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
@@ -445,17 +451,14 @@ document.getElementById("btn_todos_bebidas").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "refrescos" || ca == "gaseosas") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 
     console.log("Hola");
 });
-
-
-id_todos_entradas.click();
 
 id_entradas.addEventListener("click", () => {
     id_todos_entradas.click();
@@ -463,15 +466,11 @@ id_entradas.addEventListener("click", () => {
 
 id_segundos.addEventListener("click", () => {
     id_todos_segundos.click();
-
 });
 
 id_bebidas.addEventListener("click", () => {
     id_todos_bebidas.click();
 });
-
-
-
 
 document.getElementById("buscador").addEventListener("keyup", function () {
     let texto_ingresado = document.getElementById("buscador").value;
@@ -483,6 +482,27 @@ document.getElementById("buscador").addEventListener("keyup", function () {
             document.getElementById(a.nombre).style.display = "none";
         }
     });
-
 });
 
+document
+    .querySelector("#myTabContent .nav-link")
+    .addEventListener("click", function () {
+        document
+            .querySelector("#myTabContent .nav-link")
+            .classList.add("show active");
+    });
+{
+    /* <div class="col" id="${lista[i].nombre}">
+                      <div class="card" data-bs-toggle="modal" data-bs-target="#modal_imagen">
+                          <img  
+                          src="${lista[i].src}" class="card-img-top" alt="${lista[i].nombre}">
+                          <div class="card-body">
+                              <h5 class="card-title">${lista[i].nombre}</h5>
+                              <p class="card-text"> S/. ${lista[i].precio}
+                              </p>
+                              <a href="#" class="btn btn-primary px-5" data-bs-toggle="modal" 
+                              id="${lista[i].id}" data-bs-target="#modal_carrito" >Ordenar</a>
+                          </div>
+                      </div>
+                  </div>  */
+}
