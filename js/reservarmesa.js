@@ -92,3 +92,7 @@ clearButton.addEventListener('click', clearSelection);
 
 const resetButton = document.getElementById('resetBtn');
 resetButton.addEventListener('click', resetTables);
+
+
+const alertList = document.querySelectorAll('.alert')
+const alerts = [...alertList].map(element => new bootstrap.Alert(element))
