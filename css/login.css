@@ -19,7 +19,7 @@ body {
 .formulario{
     background: #fff;
     margin-top: 100px;
-    padding: 20px;
+    padding: 10px;
 }
 h1{
     text-align: center;
@@ -63,9 +63,12 @@ p{
       color: #1a2537;
     font-weight: 600;
 }
+
 .link:hover{
      color: cadetblue;
 }
+
+
 @media(min-width:768px)
 {
     .formulario{
@@ -75,7 +78,6 @@ p{
         border-radius: 2%;
     }
 }
-
 
 
 
