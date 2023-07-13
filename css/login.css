@@ -1,5 +1,18 @@
+.navbar-nav a:active{
+    color: red;
+  }
+  
+  #imagen_navar{
+    transition: 0.5s;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  #imagen_navar:hover{
+    transform: scale(1.1);
+  }
+
 .divprincimain {
-    margin-top: 0px; /* Ajusta el valor según tu preferencia */
+    margin-top: 0px;
 }
 
 body {
@@ -89,6 +102,38 @@ p{
 }
 
 
+
+.divprincimain {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.divprincimain>img {
+    width: 400px;
+    height: 445px;
+    margin-right: 20px;
+    margin-top: 40px;
+    border-radius: 2rem;
+}
+
+.formulario {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+@media (max-width: 1080px) {
+    .divprincimain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divprincimain>img {
+        order: 2;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
 
 
 
