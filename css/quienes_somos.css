@@ -1,32 +1,80 @@
+.navbar-nav a:active{
+  color: red;
+}
+#imagen_navar{
+  transition: 0.5s;
+  object-fit: cover;
+  overflow: hidden;
+}
+#imagen_navar:hover{
+  transform: scale(1.1);
+}
+
 .historia {
   width: 1450px;
   height: 700px;
   margin: 20px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border-style:ridge;
+  border-color: bisque;
 }
 
 .mision {
   width: 1450px;
   height: 700px;
   margin: 20px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border-style:ridge;
+  border-color: bisque;
 }
 
 .vision {
   width: 1450px;
   height: 700px;
   margin: 20px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border-style:ridge;
+  border-color: bisque;
 }
 
 .ubicanos {
   width: 1450px;
   height: 700px;
   margin: 20px;
+  margin: 0 auto;
+}
+
+.historia-y-texto {
+  margin: 0 auto;
+}
+
+.mision-y-texto {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.vision-y-texto {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.ubicanos-texto {
+  margin: 0 auto;
+  margin-top: 80px;
 }
 
 .quienes-somos {
   margin: 20px;
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin: 0;
+  font-size:50px;
 }
 
 #titulos {
@@ -40,7 +88,7 @@
 }
 
 .contenido {
-  background-color: #fef8a0;
+  background-color: white;
   display: grid;
 }
 
@@ -190,6 +238,7 @@ nav {
   color: rgb(255, 0, 0);
   background-color: rgb(255, 0, 0);
   height: 15px;
+  margin-top: 40px;
 }
 
 footer {
@@ -326,7 +375,6 @@ hr {
 input[type="text"] {
   width: 100%;
 }
-
 
 .subscribe button:hover {
   background-color: #555;
