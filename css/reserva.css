@@ -151,6 +151,20 @@ form {
   .btn-group {
       margin: 5px;
   }
+  .error{
+    background-color: red;
+    border-radius: 2rem;
+  }
+
+  .familia{
+    background-color: aqua;
+    border-radius: 2rem;
+  }
+
+  .personare{
+    background-color: chocolate;
+    border-radius: 2rem;
+  }
 }
 
 footer {
@@ -278,6 +292,7 @@ input[type="text"] {
       flex-direction: column;
       padding: 0%;
   }
+  ,
 }
 
 .linea-roja {
