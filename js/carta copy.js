@@ -203,7 +203,7 @@ let menu = [
     },
     {
         id: 23,
-        src: "img/secodecabrito.jpg",
+        src: "img/coca_cola.jpg",
         nombre: "Coca Cola",
         categoria: categorias[2],
         subcategoria: subcategorias[5],
@@ -235,7 +235,7 @@ let menu = [
     },
     {
         id: 27,
-        src: "img/secodecabrito.jpg",
+        src: "https://th.bing.com/th/id/R.761b4909ab3080ac910f84a2535206f3?rik=m0GG2Ud%2b88NHQQ&riu=http%3a%2f%2fwww.fuentesaludable.com%2fwp-content%2fuploads%2f2016%2f11%2flimonada.jpg&ehk=iJY3cTZLMtzPkjFBpn%2b5hp1vDtHyxvoR6wkEhqZcnow%3d&risl=&pid=ImgRaw&r=0",
         nombre: "Limonada",
         categoria: categorias[2],
         subcategoria: subcategorias[6],
@@ -243,7 +243,7 @@ let menu = [
     },
     {
         id: 27,
-        src: "img/secodecabrito.jpg",
+        src: "https://th.bing.com/th/id/R.929013296ea8917a6f63cdf983915c8f?rik=HVpY3PoOpOp87w&riu=http%3a%2f%2f2.bp.blogspot.com%2f-77yZc3rl8g4%2fUZayYw8QVgI%2fAAAAAAAAAbk%2fbxImKBnGsXM%2fs1600%2frefresco-de-linaza-cebada-y-borraja.jpg&ehk=63ijlKAQx0%2bBOemL4JUlF5xFjVlDNP6vIOdiK4g7aws%3d&risl=&pid=ImgRaw&r=0",
         nombre: "Cebada",
         categoria: categorias[2],
         subcategoria: subcategorias[6],
@@ -251,7 +251,7 @@ let menu = [
     },
     {
         id: 28,
-        src: "img/secodecabrito.jpg",
+        src: "https://mamaskitchenct.com/wp-content/uploads/2020/11/drink-jugo-de-tamarindo.jpg",
         nombre: "Jugo de tamarindo",
         categoria: categorias[2],
         subcategoria: subcategorias[6],
@@ -259,7 +259,7 @@ let menu = [
     },
     {
         id: 29,
-        src: "img/secodecabrito.jpg",
+        src: "https://blog.redbus.pe/wp-content/uploads/2017/12/maxresdefault-1-1.jpg",
         nombre: "Papa a la huancaína",
         categoria: categorias[0],
         subcategoria: subcategorias[0],
@@ -267,7 +267,7 @@ let menu = [
     },
     {
         id: 30,
-        src: "img/secodecabrito.jpg",
+        src: "https://unareceta.com/wp-content/uploads/2018/01/Caldo-de-gallina-con-fideos.jpg",
         nombre: "Caldo de fideos",
         categoria: categorias[0],
         subcategoria: subcategorias[0],
