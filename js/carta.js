@@ -261,7 +261,7 @@ function mostrar_platos(lista) {
                             <p class="card-text"> S/. ${lista[i].precio}
                             </p>
                             <a href="#" class="btn btn-primary px-5" data-bs-toggle="modal" 
-                            data-bs-target="#modal_carrito" >Agregar</a>
+                            id="${lista[i].id}" data-bs-target="#modal_carrito" >Ordenar</a>
                         </div>
                     </div>
                 </div>
@@ -428,6 +428,22 @@ document.getElementById("buscador").addEventListener("keyup", function () {
 
 });
 
-/* document.querySelector("#myTabContent").querySelector(".nav-link").addEventListener("click",function(){
-    document.querySelector("#myTabContent").querySelector(".nav-link").classList.add("active");
-}); */
+
+
+document.querySelector("#myTabContent .nav-link").addEventListener("click",function(){
+    document.querySelector("#myTabContent .nav-link").classList.add("show active");
+
+});
+{/* <div class="col" id="${lista[i].nombre}">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal_imagen">
+                        <img  
+                        src="${lista[i].src}" class="card-img-top" alt="${lista[i].nombre}">
+                        <div class="card-body">
+                            <h5 class="card-title">${lista[i].nombre}</h5>
+                            <p class="card-text"> S/. ${lista[i].precio}
+                            </p>
+                            <a href="#" class="btn btn-primary px-5" data-bs-toggle="modal" 
+                            id="${lista[i].id}" data-bs-target="#modal_carrito" >Ordenar</a>
+                        </div>
+                    </div>
+                </div>  */}
