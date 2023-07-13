@@ -71,6 +71,29 @@ function loadSelection() {
   }
 }
 
+function clearSelection() {
+    const table = document.querySelector(`[data-id="${selectedTable}"]`);
+    if (table) {
+      table.classList.remove('selected');
+      table.classList.remove('saved');
+    }
+    selectedTable = null;
+    localStorage.removeItem('reservationData');
+    showMessage('Selección eliminada.', 'success');
+  }
+  
+  function resetTables() {
+    const tables = document.getElementsByClassName('table');
+    for (let table of tables) {
+      table.classList.remove('selected');
+      table.classList.remove('saved');
+    }
+    selectedTable = null;
+    localStorage.removeItem('reservationData');
+    showMessage('Mesas reiniciadas.', 'success');
+  }
+  
+
 function showMessage(message, type) {
   const messageContainer = document.getElementById('message');
   messageContainer.textContent = message;

@@ -1,3 +1,28 @@
+
+.m_ocu{
+  background-color: red;
+  border-radius: 2rem;
+}
+
+.m_fam{
+  background-color: aqua;
+  border-radius: 2rem;
+}
+
+.m_per{
+  background-color: chocolate;
+  border-radius: 2rem;
+}
+
+.personales{
+  background-color: chocolate;
+}
+
+.familiares{
+  background-color: aqua;
+
+}
+
 .containe {
   max-width: 800px;
   margin: 0 auto;
