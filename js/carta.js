@@ -1,5 +1,3 @@
-
-
 let id_entradas = document.getElementById("entradas-tab");
 let id_segundos = document.getElementById("segundos-tab");
 let id_bebidas = document.getElementById("bebidas-tab");
@@ -17,12 +15,19 @@ let id_refrescos = document.getElementById("btn_refrescos");
 
 let btn_agregar_carrito = document.getElementById("agregar_Carrito");
 
-let categorias = ['entradas', 'segundos', 'bebidas'];
+let categorias = ["entradas", "segundos", "bebidas"];
 
-let subcategorias = ['clasicas', 'arroces_y_carnes', 'fritos', 'pastas', 'marinos', 'gaseosas', 'refrescos'];
+let subcategorias = [
+    "clasicas",
+    "arroces_y_carnes",
+    "fritos",
+    "pastas",
+    "marinos",
+    "gaseosas",
+    "refrescos",
+];
 
 var filtro_busqueda = [];
-
 
 let menu = [
     {
@@ -31,7 +36,7 @@ let menu = [
         nombre: "Ensalada",
         categoria: categorias[0],
         subcategoria: subcategorias[0],
-        precio: 5.00
+        precio: 5.0,
     },
     {
         id: 2,
@@ -39,7 +44,7 @@ let menu = [
         nombre: "Aguadito norteño",
         categoria: categorias[0],
         subcategoria: subcategorias[0],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 3,
@@ -47,7 +52,7 @@ let menu = [
         nombre: "Torta de choclo",
         categoria: categorias[0],
         subcategoria: subcategorias[0],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 4,
@@ -55,7 +60,7 @@ let menu = [
         nombre: "Pollo saltado",
         categoria: categorias[1],
         subcategoria: subcategorias[1],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 5,
@@ -63,7 +68,7 @@ let menu = [
         nombre: "Lomo saltado",
         categoria: categorias[1],
         subcategoria: subcategorias[1],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 6,
@@ -71,7 +76,7 @@ let menu = [
         nombre: "Arroz chaufa",
         categoria: categorias[1],
         subcategoria: subcategorias[1],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 7,
@@ -79,7 +84,7 @@ let menu = [
         nombre: "Seco de cabrito",
         categoria: categorias[1],
         subcategoria: subcategorias[1],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 8,
@@ -87,7 +92,7 @@ let menu = [
         nombre: "Cecina saltada",
         categoria: categorias[1],
         subcategoria: subcategorias[1],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 9,
@@ -95,7 +100,7 @@ let menu = [
         nombre: "Broaster",
         categoria: categorias[1],
         subcategoria: subcategorias[2],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 10,
@@ -103,7 +108,7 @@ let menu = [
         nombre: "Mostrito",
         categoria: categorias[1],
         subcategoria: subcategorias[2],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 11,
@@ -111,7 +116,7 @@ let menu = [
         nombre: "Salchipapa",
         categoria: categorias[1],
         subcategoria: subcategorias[2],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 12,
@@ -119,7 +124,7 @@ let menu = [
         nombre: "Hamburguesa de pollo",
         categoria: categorias[1],
         subcategoria: subcategorias[2],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 13,
@@ -127,7 +132,7 @@ let menu = [
         nombre: "Hamburguesa de carne",
         categoria: categorias[1],
         subcategoria: subcategorias[2],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 14,
@@ -135,7 +140,7 @@ let menu = [
         nombre: "Tallarín saltado",
         categoria: categorias[1],
         subcategoria: subcategorias[3],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 15,
@@ -143,7 +148,7 @@ let menu = [
         nombre: "Tallarines verdes",
         categoria: categorias[1],
         subcategoria: subcategorias[3],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 16,
@@ -151,7 +156,7 @@ let menu = [
         nombre: "Tallarines a la huancaína",
         categoria: categorias[1],
         subcategoria: subcategorias[3],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 17,
@@ -159,7 +164,7 @@ let menu = [
         nombre: "Sudado",
         categoria: categorias[1],
         subcategoria: subcategorias[4],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 18,
@@ -167,7 +172,7 @@ let menu = [
         nombre: "Ceviche",
         categoria: categorias[1],
         subcategoria: subcategorias[4],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 19,
@@ -175,7 +180,7 @@ let menu = [
         nombre: "Arroz con mariscos",
         categoria: categorias[1],
         subcategoria: subcategorias[4],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 20,
@@ -183,7 +188,7 @@ let menu = [
         nombre: "Tortilla de raya",
         categoria: categorias[1],
         subcategoria: subcategorias[4],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 21,
@@ -191,7 +196,7 @@ let menu = [
         nombre: "Chicharrón de pescado",
         categoria: categorias[1],
         subcategoria: subcategorias[4],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 22,
@@ -199,7 +204,7 @@ let menu = [
         nombre: "Parihuela",
         categoria: categorias[1],
         subcategoria: subcategorias[4],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 23,
@@ -207,7 +212,7 @@ let menu = [
         nombre: "Coca Cola",
         categoria: categorias[2],
         subcategoria: subcategorias[5],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 24,
@@ -215,7 +220,7 @@ let menu = [
         nombre: "Inka Cola",
         categoria: categorias[2],
         subcategoria: subcategorias[5],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 25,
@@ -223,7 +228,7 @@ let menu = [
         nombre: "Chicha de Jora",
         categoria: categorias[2],
         subcategoria: subcategorias[6],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 26,
@@ -231,7 +236,7 @@ let menu = [
         nombre: "Chicha Morada",
         categoria: categorias[2],
         subcategoria: subcategorias[6],
-        precio: 10.50
+        precio: 10.5,
     },
     {
         id: 27,
@@ -239,75 +244,17 @@ let menu = [
         nombre: "Limonada",
         categoria: categorias[2],
         subcategoria: subcategorias[6],
-        precio: 10.50
+        precio: 10.5,
     },
-    {
-        id: 27,
-        src: "img/secodecabrito.jpg",
-        nombre: "Cebada",
-        categoria: categorias[2],
-        subcategoria: subcategorias[6],
-        precio: 10.50
-    },
-    {
-        id: 28,
-        src: "img/secodecabrito.jpg",
-        nombre: "Jugo de tamarindo",
-        categoria: categorias[2],
-        subcategoria: subcategorias[6],
-        precio: 10.50
-    },
-    {
-        id: 29,
-        src: "img/secodecabrito.jpg",
-        nombre: "Papa a la huancaína",
-        categoria: categorias[0],
-        subcategoria: subcategorias[0],
-        precio: 10.50
-    },
-    {
-        id: 30,
-        src: "img/secodecabrito.jpg",
-        nombre: "Caldo de fideos",
-        categoria: categorias[0],
-        subcategoria: subcategorias[0],
-        precio: 10.50
-    },
-    {
-        id: 31,
-        src: "img/secodecabrito.jpg",
-        nombre: "Caldo de gallina",
-        categoria: categorias[0],
-        subcategoria: subcategorias[0],
-        precio: 10.50
-    },
-    {
-        id: 32,
-        src: "img/secodecabrito.jpg",
-        nombre: "Fanta",
-        categoria: categorias[2],
-        subcategoria: subcategorias[5],
-        precio: 10.50
-    },
-    {
-        id: 33,
-        src: "img/secodecabrito.jpg",
-        nombre: "Sprite",
-        categoria: categorias[2],
-        subcategoria: subcategorias[5],
-        precio: 10.50
-    }
-]
+];
 
 mostrar_platos(menu);
 
 function mostrar_platos(lista) {
-
     // document.getElementById("card").innerHTML = "";
 
     for (var i = 0; i < lista.length; i++) {
-
-        document.getElementById('platos').innerHTML += `
+        document.getElementById("platos").innerHTML += `
         <div class="col" id="${lista[i].nombre}">
                     <div class="card" data-bs-toggle="modal" data-bs-target="#modal_imagen">
                         <img  
@@ -316,18 +263,14 @@ function mostrar_platos(lista) {
                             <h5 class="card-title">${lista[i].nombre}</h5>
                             <p class="card-text"> S/. ${lista[i].precio}
                             </p>
-                            <a href="#" class="btn btn-primary px-5" data-bs-toggle="modal" 
+                            <a href="#" class="btn btn-primary px-5 ordenar_carrito" data-bs-toggle="modal" 
                             id="${lista[i].id}" data-bs-target="#modal_carrito" >Ordenar</a>
                         </div>
                     </div>
                 </div>
-        `
-
+        `;
     }
 }
-
-
-
 
 document.getElementById("btn_clasicas").addEventListener("click", () => {
     for (var i = 0; i < menu.length; i++) {
@@ -335,25 +278,27 @@ document.getElementById("btn_clasicas").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "clasicas") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
 
-document.getElementById("btn_arroces_y_carnes").addEventListener("click", () => {
-    for (var i = 0; i < menu.length; i++) {
-        const ca = menu[i].subcategoria;
-        const nom = menu[i].nombre;
+document
+    .getElementById("btn_arroces_y_carnes")
+    .addEventListener("click", () => {
+        for (var i = 0; i < menu.length; i++) {
+            const ca = menu[i].subcategoria;
+            const nom = menu[i].nombre;
 
-        if (ca == "arroces_y_carnes") {
-            document.getElementById(nom).style.display = 'block';
-        } else {
-            document.getElementById(nom).style.display = 'none';
+            if (ca == "arroces_y_carnes") {
+                document.getElementById(nom).style.display = "block";
+            } else {
+                document.getElementById(nom).style.display = "none";
+            }
         }
-    }
-});
+    });
 
 document.getElementById("btn_fritos").addEventListener("click", () => {
     for (var i = 0; i < menu.length; i++) {
@@ -361,9 +306,9 @@ document.getElementById("btn_fritos").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "fritos") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
@@ -373,9 +318,9 @@ document.getElementById("btn_pastas").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "pastas") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
@@ -385,9 +330,9 @@ document.getElementById("btn_marinos").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "marinos") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
@@ -397,9 +342,9 @@ document.getElementById("btn_gaseosas").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "gaseosas") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
@@ -409,9 +354,9 @@ document.getElementById("btn_refrescos").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "refrescos") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
@@ -421,9 +366,9 @@ document.getElementById("btn_todos_entradas").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "clasicas") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
@@ -432,10 +377,15 @@ document.getElementById("btn_todos_segundos").addEventListener("click", () => {
         const ca = menu[i].subcategoria;
         const nom = menu[i].nombre;
 
-        if (ca == "arroces_y_carnes" || ca == "fritos" || ca == "pastas" || ca == "marinos") {
-            document.getElementById(nom).style.display = 'block';
+        if (
+            ca == "arroces_y_carnes" ||
+            ca == "fritos" ||
+            ca == "pastas" ||
+            ca == "marinos"
+        ) {
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 });
@@ -445,17 +395,14 @@ document.getElementById("btn_todos_bebidas").addEventListener("click", () => {
         const nom = menu[i].nombre;
 
         if (ca == "refrescos" || ca == "gaseosas") {
-            document.getElementById(nom).style.display = 'block';
+            document.getElementById(nom).style.display = "block";
         } else {
-            document.getElementById(nom).style.display = 'none';
+            document.getElementById(nom).style.display = "none";
         }
     }
 
     console.log("Hola");
 });
-
-
-id_todos_entradas.click();
 
 id_entradas.addEventListener("click", () => {
     id_todos_entradas.click();
@@ -463,15 +410,11 @@ id_entradas.addEventListener("click", () => {
 
 id_segundos.addEventListener("click", () => {
     id_todos_segundos.click();
-
 });
 
 id_bebidas.addEventListener("click", () => {
     id_todos_bebidas.click();
 });
-
-
-
 
 document.getElementById("buscador").addEventListener("keyup", function () {
     let texto_ingresado = document.getElementById("buscador").value;
@@ -483,6 +426,27 @@ document.getElementById("buscador").addEventListener("keyup", function () {
             document.getElementById(a.nombre).style.display = "none";
         }
     });
-
 });
 
+document
+    .querySelector("#myTabContent .nav-link")
+    .addEventListener("click", function () {
+        document
+            .querySelector("#myTabContent .nav-link")
+            .classList.add("show active");
+    });
+{
+    /* <div class="col" id="${lista[i].nombre}">
+                      <div class="card" data-bs-toggle="modal" data-bs-target="#modal_imagen">
+                          <img  
+                          src="${lista[i].src}" class="card-img-top" alt="${lista[i].nombre}">
+                          <div class="card-body">
+                              <h5 class="card-title">${lista[i].nombre}</h5>
+                              <p class="card-text"> S/. ${lista[i].precio}
+                              </p>
+                              <a href="#" class="btn btn-primary px-5" data-bs-toggle="modal" 
+                              id="${lista[i].id}" data-bs-target="#modal_carrito" >Ordenar</a>
+                          </div>
+                      </div>
+                  </div>  */
+}
