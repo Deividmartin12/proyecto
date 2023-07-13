@@ -561,3 +561,18 @@ hr {
 .form-control{
   background-color: #fefce0 !important;
 }
+.card-body{
+  background-color: #fefce0;
+}
+
+#pagopedido{
+  background-color: #fefce0;
+
+  border: #fef8a0;
+  color: black;
+};
+.accordion-button{
+  background-color: #fefce0;
+
+  border: #fef8a0;
+}

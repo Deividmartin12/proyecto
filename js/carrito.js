@@ -21,6 +21,7 @@ ordenar.forEach((boton) => {
       };
       localStorage.setItem(id, JSON.stringify(obj));
       alert("Agregado correctamente");
+      window.location.reload();
     };
   });
 });
