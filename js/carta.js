@@ -240,6 +240,62 @@ let menu = [
         categoria: categorias[2],
         subcategoria: subcategorias[6],
         precio: 10.50
+    },
+    {
+        id: 27,
+        src: "img/secodecabrito.jpg",
+        nombre: "Cebada",
+        categoria: categorias[2],
+        subcategoria: subcategorias[6],
+        precio: 10.50
+    },
+    {
+        id: 28,
+        src: "img/secodecabrito.jpg",
+        nombre: "Jugo de tamarindo",
+        categoria: categorias[2],
+        subcategoria: subcategorias[6],
+        precio: 10.50
+    },
+    {
+        id: 29,
+        src: "img/secodecabrito.jpg",
+        nombre: "Papa a la huancaína",
+        categoria: categorias[0],
+        subcategoria: subcategorias[0],
+        precio: 10.50
+    },
+    {
+        id: 30,
+        src: "img/secodecabrito.jpg",
+        nombre: "Caldo de fideos",
+        categoria: categorias[0],
+        subcategoria: subcategorias[0],
+        precio: 10.50
+    },
+    {
+        id: 31,
+        src: "img/secodecabrito.jpg",
+        nombre: "Caldo de gallina",
+        categoria: categorias[0],
+        subcategoria: subcategorias[0],
+        precio: 10.50
+    },
+    {
+        id: 32,
+        src: "img/secodecabrito.jpg",
+        nombre: "Fanta",
+        categoria: categorias[2],
+        subcategoria: subcategorias[5],
+        precio: 10.50
+    },
+    {
+        id: 33,
+        src: "img/secodecabrito.jpg",
+        nombre: "Sprite",
+        categoria: categorias[2],
+        subcategoria: subcategorias[5],
+        precio: 10.50
     }
 ]
 
@@ -399,6 +455,8 @@ document.getElementById("btn_todos_bebidas").addEventListener("click", () => {
 });
 
 
+id_todos_entradas.click();
+
 id_entradas.addEventListener("click", () => {
     id_todos_entradas.click();
 });
@@ -428,22 +486,3 @@ document.getElementById("buscador").addEventListener("keyup", function () {
 
 });
 
-
-
-document.querySelector("#myTabContent .nav-link").addEventListener("click",function(){
-    document.querySelector("#myTabContent .nav-link").classList.add("show active");
-
-});
-{/* <div class="col" id="${lista[i].nombre}">
-                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal_imagen">
-                        <img  
-                        src="${lista[i].src}" class="card-img-top" alt="${lista[i].nombre}">
-                        <div class="card-body">
-                            <h5 class="card-title">${lista[i].nombre}</h5>
-                            <p class="card-text"> S/. ${lista[i].precio}
-                            </p>
-                            <a href="#" class="btn btn-primary px-5" data-bs-toggle="modal" 
-                            id="${lista[i].id}" data-bs-target="#modal_carrito" >Ordenar</a>
-                        </div>
-                    </div>
-                </div>  */}
