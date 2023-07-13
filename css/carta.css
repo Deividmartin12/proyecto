@@ -1,3 +1,8 @@
+
+.navbar-nav a:active{
+    color: red;
+}
+
 #barra_categorias{
     background-color: rgb(37,37,37);
 }
@@ -9,8 +14,6 @@
 #navbarSupportedContent .active{
     background-color: red;
 }
-
-
 
 #myTabContent .nav-link:active{
     /* color: red; */
