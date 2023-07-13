@@ -149,57 +149,6 @@ nav {
   }
 }
 
-/*  carrusel ccs anggelo */
-
-
-/*PRUEBA CABALLERO*/
-/*TIPO DE LETRA*/
-/*@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
-/*
-#header{
-  background-image: url(/proyecto/img/fondo_header.png);
-  height: 85px;
-  background-size: 1550px;
-   font-weight: bold; 
-}*/
-
-/*PRUEBA CABALLERO*/
-
-
-
-/*
->>>>>>>>> Temporary merge branch 2
-ul {
-    width: 100%;
-    text-align: center;
-}
-
-ul>li {
-    font-family: inherit;
-    font-size: 20px;
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-
-ul li a {
-    font-family: 'Roboto', sans-serif;
-    transition: all 0.3s ease;
-    color: black;
-    text-decoration: none;
-}
-*/
-
-
-/*
-nav>div h1 {
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
-
-    padding-left: 5%;
-    padding-top: 5%;
-    margin: 0;
-}*/
 
 .imagenNav {
   border: 0;
@@ -210,12 +159,6 @@ nav>div h1 {
 }
 
 
-
-/* main img {
-    width: 1465px;
-    width: 100%;
-    height: auto;
-} */
 
 .imagenseguir {
   width: 60px;
@@ -231,18 +174,6 @@ nav>div h1 {
   text-align: center;
 }
 
-/*
-.derecha {
-    padding: 25px;
-    text-align: justify;
-    width: 33%;
-    background-color: black;
-    float: left;
-    color: white;
-    height: 400px;
-    font-size: 10px;
-}
-*/
 #trabaja {
   list-style: none;
   color: black;
@@ -494,13 +425,11 @@ input[type="text"] {
   display: block;
   margin: 0 auto;
   width: 50px;
-
 }
 
 .container {
   display: flex;
   align-items: center;
-
 }
 
 /*    */
@@ -530,13 +459,11 @@ input[type="text"] {
 
 .suscribe input {
   width: 15%;
-
 }
 
 @media (max-width: 767px) {
   .footer-container {
     flex-direction: column;
-
     padding: 0%;
   }
 }
