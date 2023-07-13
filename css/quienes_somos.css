@@ -25,13 +25,15 @@
 .quienes-somos {
   margin: 20px;
   padding-top: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
-h4 {
+#titulos {
   margin: 20px;
 }
 
-p {
+#parrafos {
   margin: 20px;
   width: 1450px;
   text-align: justify;
@@ -39,6 +41,7 @@ p {
 
 .contenido {
   background-color: #fef8a0;
+  display: grid;
 }
 
 /*NAV*/
@@ -319,3 +322,17 @@ hr {
   color: white;
   margin: 0;
 }
+
+input[type="text"] {
+  width: 100%;
+}
+
+
+.subscribe button:hover {
+  background-color: #555;
+}
+
+#acepto {
+  float: left;
+}
+
