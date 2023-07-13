@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+    mostrar_fin()
     const datos_pedido = document.querySelector("#datos_pedido");
     let total = 0;
-    for(let i=0; i<localStorage.length; i++) {
+    for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
 
         const producto = JSON.parse(localStorage.getItem(key));
@@ -9,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         show_producto(producto);
     }
     const total_etiqueta = document.createElement("P");
-    total_etiqueta.classList.add("text-end","p-3","fw-bold","fs-5")
+    total_etiqueta.classList.add("text-end", "p-3", "fw-bold", "fs-5")
     total_etiqueta.textContent = "El precio total es: " + total;
     datos_pedido.appendChild(total_etiqueta)
 })
@@ -33,12 +34,30 @@ function show_producto(producto, total) {
     img.src = src;
     precio_etiqueta.textContent = precio;
 
-    div_card.classList.add("d-flex","flex-column","justify-content-center","align-items-center")
-    div_body.classList.add("w-100","d-flex","gap-2","justify-content-around")
+    div_card.classList.add("d-flex", "flex-column", "justify-content-center", "align-items-center")
+    div_body.classList.add("w-100", "d-flex", "gap-2", "justify-content-around")
     div_body.appendChild(h5)
     div_body.appendChild(precio_etiqueta)
     div_card.appendChild(div_body);
-    
+
 
     datos_pedido.appendChild(div_card);
+}
+
+function mostrar_fin() {
+    const Boton = document.querySelector("#pagarpedido");
+    Boton.addEventListener('click', (e) => {
+        e.preventDefault();
+        const nombre = document.querySelector("#nombre").value;
+        const apellido = document.querySelector("#apellido").value;
+        
+        swal('Pago exitos', nombre+" "+apellido, 'success');
+        
+        localStorage.clear();
+
+        setTimeout(() => {
+            window.location.reload()
+        }, 8000);
+    });
+
 }

@@ -616,3 +616,6 @@ hr {
   border-radius: 15px;
 }
 
+.navbar-nav a:active{
+  color: red;
+}
