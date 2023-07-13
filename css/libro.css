@@ -1,0 +1,100 @@
+.divprincimain2 {
+    display: flex;
+    background-color: black;
+}
+
+.delivery-heading {
+    margin-left: 40px;
+    color: white;
+}
+
+.divprincipal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 10px;
+    text-align: right;
+    width: 400px; /* Ajusta el ancho del label según tus necesidades */
+}
+
+.medium-input {
+    width: 200px; /* Tamaño fijo para input mediano */
+}
+
+
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f9cece3b;
+    background-size: cover;
+    background-attachment: fixed;
+}
+* {
+    box-sizing: border-box;
+}
+
+.formulario{
+    background: #fff;
+    margin-top: 100px;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+
+
+
+p{
+    text-align: center;
+}
+
+#pdirec{
+    text-align: left;
+    
+}
+
+
+@media(min-width:768px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
