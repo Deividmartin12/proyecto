@@ -275,8 +275,8 @@ footer div>p {
 
 ul li a:hover {
   padding: 5px;
-  background-color: black;
-  color: #fff;
+  background-color: white;
+  color: black;
   border-radius: 15px;
 }
 
