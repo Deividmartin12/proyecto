@@ -3,6 +3,9 @@
   height: 700px;
   margin: 20px;
   margin: 0 auto;
+  border-radius: 20px;
+  border-style:ridge;
+  border-color: bisque;
 }
 
 .mision {
@@ -10,6 +13,9 @@
   height: 700px;
   margin: 20px;
   margin: 0 auto;
+  border-radius: 20px;
+  border-style:ridge;
+  border-color: bisque;
 }
 
 .vision {
@@ -17,6 +23,9 @@
   height: 700px;
   margin: 20px;
   margin: 0 auto;
+  border-radius: 20px;
+  border-style:ridge;
+  border-color: bisque;
 }
 
 .ubicanos {
@@ -33,6 +42,16 @@
 .mision-y-texto {
   margin: 0 auto;
   margin-top: 20px;
+}
+
+.vision-y-texto {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.ubicanos-texto {
+  margin: 0 auto;
+  margin-top: 80px;
 }
 
 .quienes-somos {
