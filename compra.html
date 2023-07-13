@@ -12,6 +12,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </head>
 
 <body>
@@ -54,50 +56,55 @@
             <h1>PAGO PEDIDO</h1>
         </div>
         <h2 class="sub-pago">Datos</h2>
-        <div class="datosBotones m-0">
-            <div class="botonesDatos text-center flex-colum">
-                <a class="btn btn-primary w-30 d-inline-block col-md-3 col-sm-11 mb-1 mb-md-0" href="#"
-                    role="button">Apple</a>
-                <a class="btn btn-primary w-30 d-inline-block col-md-3 col-sm-11 mb-1 mb-md-0" href="#"
-                    role="button">Google</a>
-                <a class="btn btn-primary w-30 d-inline-block col-md-3  col-sm-11  mb-1 mb-md-0" href="#"
-                    role="button">Facebook</a>
+        <div class="m-0">
+            <div class=" d-flex text-center flex-md-row flex-colum gap-1 m-2">
+                <div class="w-100">
+                    <a class="btn btn-primary w-100" href="#" role="button">Apple</a>
+                </div>
+                <div class="w-100">
+                    <a class="btn btn-primary w-100" href="#" role="button">Google</a>
+                </div>
+                <div class="w-100">
+                    <a class="btn btn-primary w-100" href="#" role="button">Facebook</a>
+                </div>
+
             </div>
         </div>
 
         <section id="registro">
             <h2 class="sub-pago">Datos</h2>
-            <form action="" class="row">
-                <div class="form-floating mb-3 col-md-6 p-1">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
-                    <label for="floatingInput">Nombre</label>
-                </div>
-                <div class="form-floating mb-3 col-md-6 p-1">
-                    <input type="text" class="form-control" id="floatingPassword" placeholder="Apellido">
-                    <label for="floatingPassword">Apellido</label>
-                </div>
-                <div class="w-100"></div>
-                <div class="form-floating mb-3 col-md-6 p-1">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
-                    <label for="floatingPassword">Contraseña</label>
-                </div>
 
-                <div class="form-floating mb-3 col-md-6 p-1">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="Email">
-                    <label for="floatingInput">Email</label>
-                </div>
-                <div class="w-100"></div>
-                <div class="form-floating mb-3 col-md-6 p-1">
-                    <input type="number" class="form-control" id="floatingPassword" placeholder="Celular">
-                    <label for="floatingPassword">Celular</label>
-                </div>
-                <div class="form-floating mb-3 col-md-6 p-1">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="Dirección">
-                    <label for="floatingInput">Dirección</label>
-                </div>
+            
+                <form action="" class="row col-md-12 mw-100 m-1">
+                    <div class="form-floating mb-3 col-md-6 p-1">
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                        <label for="floatingInput">Nombre</label>
+                    </div>
+                    <div class="form-floating mb-3 col-md-6 p-1">
+                        <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                        <label for="floatingPassword">Apellido</label>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="form-floating mb-3 col-md-6 p-1">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+                        <label for="floatingPassword">Contraseña</label>
+                    </div>
 
-
-                </from>
+                    <div class="form-floating mb-3 col-md-6 p-1">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="form-floating mb-3 col-md-6 p-1">
+                        <input type="number" class="form-control" id="floatingPassword" placeholder="Celular">
+                        <label for="floatingPassword">Celular</label>
+                    </div>
+                    <div class="form-floating mb-3 col-md-6 p-1">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Dirección">
+                        <label for="floatingInput">Dirección</label>
+                    </div>
+                </form>
+            
 
         </section>
 
@@ -119,7 +126,7 @@
                 <h2 class="">Elegir el método de pago</h2>
                 <form class="">
                     <fieldset class="d-flex gap-4">
-                        <div class="fs-3">
+                        <div class="fs-2">
                             <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="visa"
                                 checked>
                             <label class="form-check-label" for="visa">Visa</label>
@@ -164,27 +171,31 @@
 
         <div>
             <h2 class="sub-pago">Políticas de la empresa</h2>
-            <div class="card mx-5">
+            <div class="card m-2">
                 <div class="card-body">
-                    <blockquote class="blockquote mb-1">
-                        <p>
-                            Mediante el uso de nuestra plataforma de reservas, pedidos y compra de experiencias en
-                            línea en restaurantes afiliados a MUCHICK S.A. (en adelante, la “Plataforma”), que incluye
-                            una página web (www.MUCHICK.pe y www.MUCHICK.la), aplicaciones móviles para iPhone y
-                            Android, Widget (botón/motor de reservas que MUCHICK instala en la Página Web y/o redes
-                            sociales del restaurante y/o Página Web o Apps de empresas aliadas), Red de MUCHICK
-                            (integraciones que MUCHICK hace con terceros para listar restaurantes y/o recibir reservas
-                            en línea a través de sus Páginas Web y aplicaciones móviles), programa de puntos,
-                            aplicaciones y servicios (incluyendo sin limitarse a los correos electrónicos y cualquier
-                            material que le sea proporcionado conjuntamente con los servicios) (en adelante, los
-                            “Servicios”) que son operados por o controlados por MESA 247 S.A, usted está entrando en un
-                            acuerdo con nosotros de conformidad con los términos y condiciones que se describen en este
-                            documento (los “Términos de Uso”). Nuestra Política de Privacidad y de Protección de
-                            Datos Personales y la Política de Reservas forman parte integrante de estos Términos de
-                            Uso. Para efectos de estos Términos de Uso y demás Políticas toda referencia a “nos”,
-                            “nosotros”, “nuestra”, se refiere a MUCHICK S.A.
-                        </p>
-                        </footer>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </footer>
                     </blockquote>
                 </div>
             </div>
@@ -203,7 +214,7 @@
 
         </div>
         <div class="d-grid gap-4 mx-5">
-            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary" type="button" id="pagarpedido">Pagar pedido</button>
         </div>
     </div>
 

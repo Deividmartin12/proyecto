@@ -1,28 +1,25 @@
 let selectedTable = null;
 
-function selectTable(event) {
+function toggleSelection(event) {
   const table = event.target;
   const tableId = parseInt(table.dataset.id);
 
-  if (selectedTable === null) {
-    table.classList.add('selected');
-    selectedTable = tableId;
+  if (selectedTable === tableId) {
+    selectedTable = null;
+    table.classList.remove('selected');
   } else {
-    const previousTable = document.querySelector(`.table[data-id="${selectedTable}"]`);
-    previousTable.classList.remove('selected');
-
-    if (selectedTable === tableId) {
-      selectedTable = null;
-    } else {
-      table.classList.add('selected');
-      selectedTable = tableId;
+    if (selectedTable !== null) {
+      const previousSelectedTable = document.querySelector(`[data-id="${selectedTable}"]`);
+      previousSelectedTable.classList.remove('selected');
     }
+    selectedTable = tableId;
+    table.classList.add('selected');
   }
 }
 
 function clearSelection() {
-  const tables = document.getElementsByClassName('table');
-  for (let table of tables) {
+  const table = document.querySelector(`[data-id="${selectedTable}"]`);
+  if (table) {
     table.classList.remove('selected');
   }
   selectedTable = null;
@@ -31,10 +28,9 @@ function clearSelection() {
 }
 
 function resetTables() {
-  const tables = document.getElementsByClassName('table');
-  for (let table of tables) {
+  const table = document.querySelector(`[id="${selectedTable}"]`);
+  if (table) {
     table.classList.remove('selected');
-    table.classList.remove('saved');
   }
   selectedTable = null;
   localStorage.removeItem('selectedTable');
@@ -43,17 +39,19 @@ function resetTables() {
 
 function saveSelection() {
   if (selectedTable !== null) {
-    localStorage.setItem('selectedTable', selectedTable);
+    const currentDate = document.getElementById("fecha1").value;
+    const currentTime = document.getElementById("hora1").value;
+    const reservationData = {
+      date: currentDate,
+      time: currentTime,
+      table: selectedTable
+    };
+    localStorage.setItem('reservationData', JSON.stringify(reservationData));
     showMessage('Selección guardada correctamente.', 'success');
 
-    const tables = document.getElementsByClassName('table');
-    for (let table of tables) {
-      const tableId = parseInt(table.dataset.id);
-      if (tableId === selectedTable) {
-        table.classList.add('saved');
-      } else {
-        table.classList.remove('saved');
-      }
+    const table = document.querySelector(`[data-id="${selectedTable}"]`);
+    if (table) {
+      table.classList.add('saved');
     }
   } else {
     showMessage('No has seleccionado ninguna mesa.', 'error');
@@ -61,12 +59,14 @@ function saveSelection() {
 }
 
 function loadSelection() {
-  const storedSelection = localStorage.getItem('selectedTable');
-  if (storedSelection) {
-    selectedTable = parseInt(storedSelection);
-    const table = document.querySelector(`.table[data-id="${selectedTable}"]`);
+  const storedData = localStorage.getItem('reservationData');
+  if (storedData) {
+    const reservationData = JSON.parse(storedData);
+    selectedTable = reservationData.table;
+    const table = document.querySelector(`[data-id="${selectedTable}"]`);
     if (table) {
       table.classList.add('selected');
+      table.classList.add('saved');
     }
   }
 }
@@ -81,7 +81,7 @@ loadSelection();
 
 const tables = document.getElementsByClassName('table');
 for (let table of tables) {
-  table.addEventListener('click', selectTable);
+  table.addEventListener('click', toggleSelection);
 }
 
 const saveButton = document.getElementById('saveBtn');
@@ -92,7 +92,3 @@ clearButton.addEventListener('click', clearSelection);
 
 const resetButton = document.getElementById('resetBtn');
 resetButton.addEventListener('click', resetTables);
-
-
-const alertList = document.querySelectorAll('.alert')
-const alerts = [...alertList].map(element => new bootstrap.Alert(element))
