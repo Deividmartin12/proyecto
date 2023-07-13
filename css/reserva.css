@@ -11,16 +11,22 @@
   display: flex;
   
   justify-content: center;
-  margin-bottom: 20px;
+  align-items: center;
+    margin-bottom: 20px;
 }
 
 .table {
   width: 0%;
   height: 5rem;
+  justify-content: center;
+  align-items: center;
   border: 1px solid black;
   margin: 5px;
+  border: 6px #333 solid;
+  border-radius: 2rem;
   display: inline-block;
   cursor: pointer;
+  align-items: center;
 }
 
 
